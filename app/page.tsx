@@ -1,14 +1,23 @@
+import type { Metadata } from 'next';
 import SmoothScroll from '@/components/SmoothScroll';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ServicesSection from '@/components/ServicesSection';
 import ProcessSection from '@/components/ProcessSection';
-import PartnerSection from '@/components/PartnerSection';
+import ProjectsSection from '@/components/ProjectsSection';
+import PortfolioVenturesSection from '@/components/PortfolioVenturesSection';
 import TeamSection from '@/components/TeamSection';
+import PartnerSection from '@/components/PartnerSection';
 import ClientReviewSection from '@/components/ClientReviewSection';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
+
+export const metadata: Metadata = {
+  title: 'Esaren Global | Project Management Consulting & Venture Management',
+  description:
+    'Esaren Global Ltd (EGL) is a concern of Esaren International Group, UK, operating across London, Singapore, Izmir, and Dhaka with over USD 1.4 Billion in global infrastructure deliveries.',
+};
 
 export default function Home() {
   return (
@@ -19,8 +28,10 @@ export default function Home() {
         <AboutSection />
         <ServicesSection />
         <ProcessSection />
-        <PartnerSection />
+        <ProjectsSection />
+        <PortfolioVenturesSection />
         <TeamSection />
+        <PartnerSection />
         <ClientReviewSection />
         <Footer />
         <ScrollToTop />

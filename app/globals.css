@@ -8,13 +8,206 @@
   --bg-cream: #f9f6f0;              /* Warm Cream Base */
   --bg-pearl: #f4f1ea;              /* Pearl Powder White */
   --bg-card: #ffffff;               /* Pure Luxury White Card Surface */
+  
+  /* Brand Core Palette: Sovereign Navy & Champagne Gold */
+  --navy-dark: #091322;             /* Deepest Midnight Navy */
   --navy-brand: #0c1a30;            /* Sovereign Deep Navy */
-  --navy-mid: #162848;              /* Imperial Blue Navy */
-  --accent-blue: #1e3a8a;           /* Royal Blue Accent */
+  --navy-mid: #11254a;              /* Imperial Navy Mid */
+  --navy-light: #1a3868;            /* Royal Navy Accent Stop */
+  --navy-hover: #162f5e;            /* Navy Hover Accent */
+  
+  /* Sovereign Gold Accents */
+  --gold-primary: #c59b27;          /* Classic Sovereign Gold */
+  --gold-light: #e8d5a3;            /* Warm Champagne Gold Text */
+  --gold-lighter: #fff6df;          /* Bright Gilded Gold Hover Text */
+  --gold-dark: #8e6814;             /* Antique Deep Gold for Light Backgrounds */
+  --gold-border: rgba(212, 175, 55, 0.35); /* Subtle Gilded Border */
+  --gold-border-hover: rgba(212, 175, 55, 0.7);
+  --gold-glow: rgba(212, 175, 55, 0.22);
+  --gold-wash: #fcf8ee;             /* Soft Champagne Wash for Pills */
+  --gold-wash-border: rgba(197, 155, 39, 0.28);
+  
+  /* Sovereign Navy Gradient */
+  --navy-gradient: linear-gradient(135deg, #091322 0%, #11254a 50%, #1a3868 100%);
+  --navy-gradient-hover: linear-gradient(135deg, #0c1a30 0%, #162f5e 50%, #204580 100%);
+
   --gray-charcoal: #475569;         /* Slate Charcoal */
   --gray-slate: #64748b;            /* Muted Slate */
   --gray-border: rgba(15, 23, 42, 0.08);/* Soft Warm Border */
   --font-raleway: 'Raleway', sans-serif;
+}
+
+/* ============================================================
+   BRAND SOVEREIGN NAVY & GOLD UTILITY CLASSES
+   Centralized here for effortless global maintenance
+   ============================================================ */
+
+/* Primary Executive Navy-to-Navy Gradient Button with Champagne Gold Text */
+.btn-navy-gold {
+  background: var(--navy-gradient);
+  color: var(--gold-light);
+  border: 1px solid var(--gold-border);
+  box-shadow: 0 4px 16px rgba(9, 19, 34, 0.35);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-navy-gold:hover {
+  background: var(--navy-gradient-hover);
+  color: var(--gold-lighter);
+  border-color: var(--gold-border-hover);
+  box-shadow: 0 8px 24px var(--gold-glow);
+  transform: translateY(-1px);
+}
+
+/* Secondary Gilded Outline Button (on light background) */
+.btn-gold-outline {
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--navy-brand);
+  border: 1px solid var(--gold-border);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-gold-outline:hover {
+  background: #ffffff;
+  color: var(--gold-dark);
+  border-color: var(--gold-primary);
+  box-shadow: 0 4px 14px rgba(197, 155, 39, 0.15);
+}
+
+/* Sovereign Gold Badge / Pill on Light Background */
+.badge-gold {
+  background-color: var(--gold-wash);
+  border: 1px solid var(--gold-wash-border);
+  color: var(--gold-dark);
+}
+
+/* Filter Button Active / Inactive states */
+.badge-filter-active {
+  background: var(--navy-gradient);
+  color: var(--gold-light);
+  border: 1px solid var(--gold-border);
+  box-shadow: 0 4px 14px rgba(9, 19, 34, 0.25);
+}
+
+.badge-filter-inactive {
+  background: #ffffff;
+  color: var(--gray-charcoal);
+  border: 1px solid var(--gray-border);
+  transition: all 0.3s ease;
+}
+
+.badge-filter-inactive:hover {
+  border-color: var(--gold-primary);
+  color: var(--navy-brand);
+}
+
+/* Review / Endorsement Tab Item states */
+.review-tab-active {
+  background: var(--navy-gradient);
+  color: #ffffff;
+  border-color: var(--gold-border);
+  box-shadow: 0 10px 25px rgba(9, 19, 34, 0.25);
+  transform: translateX(4px);
+}
+
+.review-tab-inactive {
+  background: #ffffff;
+  color: var(--navy-brand);
+  border-color: var(--gray-border);
+  transition: all 0.3s ease;
+}
+
+.review-tab-inactive:hover {
+  border-color: var(--gold-border);
+  background: var(--gold-wash);
+}
+
+/* Circular Icon Button (Carousels, Prev/Next, Action Controls) */
+.icon-btn-navy {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--gray-border);
+  color: var(--navy-brand);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.icon-btn-navy:hover {
+  background: var(--navy-gradient);
+  color: var(--gold-light);
+  border-color: var(--gold-border);
+  box-shadow: 0 4px 14px var(--gold-glow);
+}
+
+/* Sovereign Navy background and gradient utility classes */
+.bg-navy {
+  background-color: var(--navy-brand);
+}
+
+.bg-navy-gradient {
+  background: var(--navy-gradient);
+}
+
+/* Border utilities */
+.border-gold {
+  border-color: var(--gold-border);
+}
+
+.border-gold-hover {
+  border-color: var(--gold-border-hover);
+}
+
+/* Gold Text Shimmer & Highlights */
+.text-gold {
+  color: var(--gold-primary);
+}
+
+.text-gold-light {
+  color: var(--gold-light);
+}
+
+.text-gold-dark {
+  color: var(--gold-dark);
+}
+
+.text-navy {
+  color: var(--navy-brand);
+}
+
+/* Gold Icon Box */
+.icon-box-gold {
+  background: linear-gradient(180deg, #ffffff 0%, #fbf8f0 100%);
+  border: 1px solid var(--gold-border);
+  color: var(--gold-dark);
+}
+
+/* Card Top Gold Accent Hairline on Hover:
+   Centered on the flat top edge (20% to 80%) with tapered ends fading to transparent,
+   so it never bleeds into or clashes with the rounded top corners. */
+.card-hover-gold-accent {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-hover-gold-accent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--navy-brand) 18%, var(--gold-primary) 50%, var(--gold-light) 82%, transparent 100%);
+  opacity: 0;
+  transform: scaleX(0.7);
+  transition: opacity 0.35s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  border-radius: 9999px;
+  box-shadow: 0 1px 8px var(--gold-glow);
+  z-index: 10;
+}
+
+.card-hover-gold-accent:hover::before {
+  opacity: 1;
+  transform: scaleX(1);
 }
 
 @theme inline {
@@ -22,7 +215,7 @@
   --color-foreground: var(--foreground);
   --font-sans: 'Raleway', sans-serif;
   --font-serif: 'Raleway', sans-serif;
-  --font-mono: var(--font-geist-mono);
+  --: var(--font-geist-mono);
 }
 
 body, html {
