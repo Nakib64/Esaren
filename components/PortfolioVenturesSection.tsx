@@ -18,7 +18,7 @@ export default function PortfolioVenturesSection() {
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-6 border-b border-slate-200">
           <div className="space-y-3 max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-slate-200 text-[#0c1a30] text-xs font-mono tracking-widest uppercase shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full badge-gold text-xs tracking-widest uppercase shadow-sm font-semibold">
               <span>Venture Development & JVs</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#0c1a30] tracking-tight">
@@ -31,10 +31,10 @@ export default function PortfolioVenturesSection() {
 
           <Link
             href="/ventures"
-            className="group px-6 py-3.5 rounded-full bg-[#0c1a30] text-white font-bold text-xs uppercase tracking-widest flex items-center gap-3 hover:bg-[#1e3a8a] transition-all shadow-md shrink-0 self-start lg:self-end"
+            className="group px-6 py-3.5 rounded-full btn-navy-gold font-bold text-xs uppercase tracking-widest flex items-center gap-3 shrink-0 self-start lg:self-end"
           >
             <span>View Full Portfolio & JVs</span>
-            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            <ArrowRight className="w-4 h-4 text-gold-light group-hover:text-gold-lighter transition-transform group-hover:translate-x-1" />
           </Link>
         </div>
 
@@ -47,6 +47,9 @@ export default function PortfolioVenturesSection() {
               country={v.country}
               focus={v.focus}
               description={v.description}
+              monogram={v.monogram}
+              highlight={v.highlight}
+              category={v.category}
               website={'website' in v ? (v as { website?: string }).website : undefined}
               index={idx}
             />

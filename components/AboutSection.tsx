@@ -26,7 +26,7 @@ export default function AboutSection() {
             {/* Header — two-column on desktop matching screenshot */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end">
               <div className="lg:col-span-7 space-y-4">
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-slate-200 text-[#0c1a30] text-xs font-mono tracking-widest uppercase shadow-sm">
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full badge-gold text-xs tracking-widest uppercase shadow-sm font-semibold">
                   <span>About Esaren Global</span>
                 </div>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#0c1a30] tracking-tight leading-tight">
@@ -35,20 +35,20 @@ export default function AboutSection() {
               </div>
               <div className="lg:col-span-5 space-y-5">
                 <p className="text-slate-600 text-base md:text-lg font-light leading-relaxed">
-                  Esaren Global serves as a trusted catalyst for governments, corporations, and institutional investors. We turn complex strategic ambitions into resilient ventures that scale globally.
+                  Esaren Global Ltd operates across four international hubs—London, Singapore, Izmir, and Dhaka—directing high-stakes PMC infrastructure deliveries, venture development, and cross-border partnerships.
                 </p>
                 <div className="flex items-center gap-8">
                   <div>
-                    <span className="text-3xl font-bold font-mono text-[#0c1a30]">$12B+</span>
-                    <p className="text-xs text-slate-500 uppercase tracking-wider font-mono mt-0.5">
-                      Facilitated Assets
+                    <span className="text-3xl font-bold  text-[#0c1a30]">$1.4B+</span>
+                    <p className="text-xs text-slate-500 uppercase tracking-wider  mt-0.5">
+                      Delivered Assets
                     </p>
                   </div>
                   <div className="w-px h-10 bg-slate-300" />
                   <div>
-                    <span className="text-3xl font-bold font-mono text-[#1e3a8a]">35+</span>
-                    <p className="text-xs text-slate-500 uppercase tracking-wider font-mono mt-0.5">
-                      Global Markets
+                    <span className="text-3xl font-bold text-gold-dark">20+</span>
+                    <p className="text-xs text-slate-500 uppercase tracking-wider  mt-0.5">
+                      Global Countries
                     </p>
                   </div>
                 </div>

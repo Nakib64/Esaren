@@ -2,118 +2,110 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ChevronRight, ArrowLeft } from 'lucide-react';
+import { ArrowRight, Globe, Share2, ShieldCheck } from 'lucide-react';
+import type { SubpageHeroProps, SubpageHeroPillar } from './subpageHeroTypes';
 
-interface SubpageHeroProps {
-  badge: string;
-  title: string;
-  description: string;
-  bgImage?: string;
-  parentPath?: string;
-  parentName?: string;
-  stats?: Array<{ label: string; value: string }>;
-}
-
-const DEFAULT_BG =
-  'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop';
-
-const DEFAULT_STATS = [
-  { label: 'Operating Matrix', value: '4 Global Hubs' },
-  { label: 'Track Record', value: '$1.4B+ Deployed' },
-  { label: 'Governance', value: 'Sovereign & SPV' },
+const DEFAULT_PILLARS: SubpageHeroPillar[] = [
+  { icon: Globe, title: 'Singapore-based', subtitle: 'Fund Management' },
+  { icon: Share2, title: 'Cross-border', subtitle: 'Joint Ventures' },
+  { icon: ShieldCheck, title: 'Strategic', subtitle: 'Partnerships' },
 ];
 
 export default function SubpageHero({
   badge,
   title,
   description,
-  bgImage = DEFAULT_BG,
   parentPath = '/',
-  parentName = 'Home',
-  stats = DEFAULT_STATS,
+  parentName = 'HOME',
+  primaryCtaText = 'Explore our ventures',
+  primaryCtaLink = '#ventures',
+  secondaryCtaText = 'Partner with EGL',
+  secondaryCtaLink = '/contact',
+  pillars = DEFAULT_PILLARS,
+  graphicSrc = '/images/hero_ventures_transparent.webp',
 }: SubpageHeroProps) {
   return (
-    <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-[#f9f6f0] text-[#0c1a30] border-b border-slate-200">
-      {/* Background blueprint grid & lighting */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#0c1a300a_1px,transparent_1px),linear-gradient(to_bottom,#0c1a300a_1px,transparent_1px)] bg-[size:3.5rem_3.5rem] pointer-events-none" />
-      <div className="absolute -top-32 right-1/4 w-[600px] h-[600px] bg-blue-400/10 rounded-full blur-[140px] pointer-events-none" />
+    <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 bg-[#f9f6f0] text-[#0c1a30] overflow-hidden border-b border-slate-200/80">
+      {/* Decorative architectural curve lines */}
+      <svg className="absolute bottom-0 left-0 w-80 h-36 pointer-events-none opacity-40 text-slate-300" viewBox="0 0 320 144" fill="none">
+        <path d="M-40 130 C 80 120, 160 80, 320 20" stroke="currentColor" strokeWidth="1" />
+        <path d="M-40 144 C 100 134, 200 94, 340 34" stroke="currentColor" strokeWidth="0.75" />
+      </svg>
 
       <div className="max-w-[1600px] mx-auto px-6 md:px-12 relative z-10 space-y-8">
-        {/* Breadcrumb Navigation */}
-        <nav aria-label="Breadcrumb" className="w-fit">
-          <ol className="flex items-center gap-2 text-xs font-mono bg-white/80 backdrop-blur-md px-4 py-1.5 rounded-full border border-slate-200 shadow-sm text-slate-500">
-            <li>
-              <Link href={parentPath} className="hover:text-[#0c1a30] transition-colors flex items-center gap-1.5 font-medium">
-                <ArrowLeft className="w-3.5 h-3.5" />
-                <span>{parentName}</span>
-              </Link>
-            </li>
-            <li aria-hidden="true">
-              <ChevronRight className="w-3.5 h-3.5 text-slate-300" />
-            </li>
-            <li className="text-[#0c1a30] font-bold">{badge}</li>
-          </ol>
+        {/* Breadcrumb Navigation matching screenshot */}
+        <nav aria-label="Breadcrumb" className="text-xs  tracking-widest text-slate-400 uppercase">
+          <Link href={parentPath} className="hover:text-[#0c1a30] transition-colors">{parentName}</Link>
+          <span className="mx-2 text-slate-300">/</span>
+          <span className="text-slate-600 font-semibold">{badge}</span>
         </nav>
 
-        {/* Dynamic Showcase Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          {/* Left Column: Editorial Content */}
+        {/* 2-Column Split: Editorial Left + 3D EGL Globe Right */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-7 space-y-6"
+            className="lg:col-span-6 space-y-6"
           >
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200 text-[#1e3a8a] text-xs font-mono tracking-widest uppercase shadow-sm font-bold">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#1e3a8a] animate-ping" />
-              <span>{badge}</span>
+            <div className="inline-flex items-center px-4 py-1.5 rounded-full badge-gold text-xs font-bold tracking-wider uppercase">
+              {badge}
             </div>
 
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif font-bold text-[#0c1a30] tracking-tight leading-[1.1]">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-[#0c1a30] tracking-tight leading-[1.12]">
               {title}
             </h1>
 
-            <p className="text-slate-600 text-base sm:text-lg md:text-xl font-light leading-relaxed max-w-2xl">
+            <p className="text-slate-600 text-base sm:text-lg font-light leading-relaxed max-w-xl">
               {description}
             </p>
 
-            {/* Quick Metrics Bar */}
-            <div className="grid grid-cols-3 gap-4 pt-6 border-t border-slate-200/80 max-w-xl">
-              {stats.map((s) => (
-                <div key={s.label} className="space-y-0.5">
-                  <p className="text-xs font-mono uppercase tracking-wider text-slate-400">{s.label}</p>
-                  <p className="text-base sm:text-lg font-serif font-bold text-[#0c1a30]">{s.value}</p>
-                </div>
-              ))}
+            {/* Action Buttons */}
+            <div className="flex flex-wrap items-center gap-6 pt-2">
+              <Link
+                href={primaryCtaLink}
+                className="px-7 py-3.5 rounded-full btn-navy-gold font-medium text-xs tracking-wider flex items-center gap-3 shadow-md group"
+              >
+                <span>{primaryCtaText}</span>
+                <ArrowRight className="w-4 h-4 text-[#dfba54] transition-transform group-hover:translate-x-1" />
+              </Link>
+              <Link
+                href={secondaryCtaLink}
+                className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-[#0c1a30] hover:text-[#8e6814] transition-colors group"
+              >
+                <span>{secondaryCtaText}</span>
+                <ArrowRight className="w-3.5 h-3.5 text-[#8e6814] transition-transform group-hover:translate-x-1" />
+              </Link>
+            </div>
+
+            {/* 3-Pillar Feature Strip */}
+            <div className="grid grid-cols-3 gap-6 pt-10 border-t border-slate-200/80 max-w-xl">
+              {pillars.map((p, idx) => {
+                const Icon = p.icon;
+                return (
+                  <div key={p.title} className={`space-y-1 ${idx > 0 ? 'border-l border-slate-200/80 pl-6' : ''}`}>
+                    <Icon className="w-5 h-5 text-[#0c1a30] stroke-[1.75]" />
+                    <p className="text-sm font-serif font-bold text-[#0c1a30] pt-1 leading-snug">{p.title}</p>
+                    <p className="text-xs text-slate-500 font-light">{p.subtitle}</p>
+                  </div>
+                );
+              })}
             </div>
           </motion.div>
 
-          {/* Right Column: Architectural Photography Showcase */}
+          {/* Right Column: 3D Luminous EGL Globe */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.96 }}
+            initial={{ opacity: 0, scale: 0.94 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-5 relative"
+            transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-6 relative flex items-center justify-center lg:justify-end"
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200/90 aspect-[16/11] group bg-[#0c1a30]">
+            <div className="relative w-full max-w-[620px] aspect-[574/505]">
               <img
-                src={bgImage}
+                src={graphicSrc}
                 alt={title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-95"
+                className="w-full h-full object-contain filter drop-shadow-xl"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1a30]/85 via-[#0c1a30]/20 to-transparent" />
-
-              {/* Corner Tag */}
-              <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-black/40 backdrop-blur-md border border-white/20 text-white text-[10px] font-mono tracking-widest uppercase flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                <span>ADVISORY MATRIX</span>
-              </div>
-
-              {/* Bottom Metadata Bar */}
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs font-mono">
-                <span className="text-slate-300">01°17'N 103°50'E</span>
-                <span className="text-blue-300 font-semibold uppercase tracking-wider">Singapore Corporate HQ</span>
-              </div>
             </div>
           </motion.div>
         </div>

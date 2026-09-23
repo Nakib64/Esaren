@@ -23,7 +23,7 @@ export default function PartnerSection() {
       <div className="absolute right-0 top-0 bottom-0 w-36 bg-gradient-to-l from-[#f4f1ea] to-transparent z-10 pointer-events-none" />
 
       <div className="max-w-[1600px] mx-auto px-6 mb-12 text-center space-y-3">
-        <span className="text-xs font-mono tracking-[0.3em] text-[#1e3a8a] uppercase font-bold">
+        <span className="text-xs tracking-[0.3em] text-gold-dark uppercase font-bold">
           Global Strategic Alliances
         </span>
         <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#0c1a30] tracking-tight">
@@ -38,19 +38,19 @@ export default function PartnerSection() {
             return (
               <div
                 key={index}
-                className="group flex flex-col items-center text-center p-6 w-72 rounded-3xl bg-white border border-slate-200/80 hover:border-[#0c1a30]/40 transition-all duration-300 hover:-translate-y-1 shrink-0 shadow-sm space-y-4"
+                className="group flex flex-col items-center text-center p-6 w-72 rounded-3xl bg-white border border-slate-200/80 hover:border-gold-border card-hover-gold-accent overflow-hidden transition-all duration-300 hover:-translate-y-1 shrink-0 shadow-sm space-y-4"
               >
-                <div className="w-14 h-14 rounded-2xl bg-slate-100 border border-slate-200 flex items-center justify-center text-[#0c1a30] group-hover:bg-[#0c1a30] group-hover:text-white transition-all shadow-sm">
+                <div className="w-14 h-14 rounded-2xl icon-box-gold flex items-center justify-center group-hover:bg-navy-gradient group-hover:text-gold-light group-hover:border-gold-hover transition-all shadow-sm">
                   <Icon className="w-7 h-7 stroke-[1.75]" />
                 </div>
                 <div className="space-y-1">
                   <h3 className="text-base font-bold font-serif text-[#0c1a30] leading-snug">
                     {partner.name}
                   </h3>
-                  <span className="text-[11px] font-mono text-[#1e3a8a] uppercase tracking-wider font-semibold block">
+                  <span className="text-[11px] text-gold-dark uppercase tracking-wider font-semibold block">
                     {partner.type}
                   </span>
-                  <span className="text-[10px] font-mono text-slate-400 block">{partner.country}</span>
+                  <span className="text-[10px] text-slate-400 block">{partner.country}</span>
                 </div>
               </div>
             );

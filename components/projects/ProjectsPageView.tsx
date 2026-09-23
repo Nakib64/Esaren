@@ -4,6 +4,7 @@ import { useState } from 'react';
 import SubpageHero from '@/components/ui/SubpageHero';
 import ProjectCard from '@/components/ui/ProjectCard';
 import { COMPLETED_PROJECTS } from '@/data/projectsData';
+import { DollarSign, Compass, Award } from 'lucide-react';
 
 const categories = [
   'All Megaprojects',
@@ -28,7 +29,16 @@ export default function ProjectsPageView() {
         badge="Landmark Portfolio"
         title="Completed Megaprojects & Global Deliveries"
         description="A proven track record spanning over USD 1.4 Billion in critical infrastructure, expressways, deep-sea energy terminals, and utility-scale solar generation."
-        bgImage="https://images.unsplash.com/photo-1545558014-8692077e9b5c?q=80&w=2070&auto=format&fit=crop"
+        graphicSrc="/images/hero_projects_transparent.webp"
+        primaryCtaText="View All Megaprojects"
+        primaryCtaLink="#projects"
+        secondaryCtaText="Partner on Megaprojects"
+        secondaryCtaLink="/contact"
+        pillars={[
+          { icon: DollarSign, title: '$1.4B+ Total', subtitle: 'Completed Assets' },
+          { icon: Compass, title: '10 Megaprojects', subtitle: 'Global Deliveries' },
+          { icon: Award, title: '100% On-Budget', subtitle: 'Execution Governance' },
+        ]}
       />
 
       <section className="py-20 md:py-28 bg-[#f9f6f0] text-[#0c1a30]">
@@ -37,19 +47,19 @@ export default function ProjectsPageView() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-8 rounded-3xl bg-white border border-slate-200 shadow-sm">
             <div>
               <span className="text-3xl sm:text-4xl font-serif font-bold text-[#0c1a30]">$1.4B+</span>
-              <p className="text-xs font-mono text-slate-500 uppercase tracking-wider mt-1">Delivered Asset Value</p>
+              <p className="text-xs text-slate-500 uppercase tracking-wider mt-1">Delivered Asset Value</p>
             </div>
             <div>
-              <span className="text-3xl sm:text-4xl font-serif font-bold text-[#1e3a8a]">10+</span>
-              <p className="text-xs font-mono text-slate-500 uppercase tracking-wider mt-1">Landmark Megaprojects</p>
+              <span className="text-3xl sm:text-4xl font-serif font-bold text-gold-dark">10+</span>
+              <p className="text-xs text-slate-500 uppercase tracking-wider mt-1">Landmark Megaprojects</p>
             </div>
             <div>
               <span className="text-3xl sm:text-4xl font-serif font-bold text-[#0c1a30]">20+</span>
-              <p className="text-xs font-mono text-slate-500 uppercase tracking-wider mt-1">Global Client Reach</p>
+              <p className="text-xs text-slate-500 uppercase tracking-wider mt-1">Global Client Reach</p>
             </div>
             <div>
-              <span className="text-3xl sm:text-4xl font-serif font-bold text-[#1e3a8a]">100%</span>
-              <p className="text-xs font-mono text-slate-500 uppercase tracking-wider mt-1">On-Budget Governance</p>
+              <span className="text-3xl sm:text-4xl font-serif font-bold text-gold-dark">100%</span>
+              <p className="text-xs text-slate-500 uppercase tracking-wider mt-1">On-Budget Governance</p>
             </div>
           </div>
 
@@ -60,10 +70,8 @@ export default function ProjectsPageView() {
                 key={cat}
                 type="button"
                 onClick={() => setActiveCategory(cat)}
-                className={`px-5 py-2 rounded-full text-xs font-mono font-medium uppercase tracking-wider transition-all duration-300 shrink-0 border ${
-                  activeCategory === cat
-                    ? 'bg-[#0c1a30] text-white border-[#0c1a30] shadow-md'
-                    : 'bg-white text-slate-600 border-slate-200 hover:border-slate-400'
+                className={`px-5 py-2 rounded-full text-xs font-medium uppercase tracking-wider transition-all duration-300 shrink-0 border ${
+                  activeCategory === cat ? 'badge-filter-active' : 'badge-filter-inactive'
                 }`}
               >
                 {cat}

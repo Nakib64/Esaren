@@ -12,6 +12,8 @@ export const BRAND_TAGLINE = 'Stronger bonds with unity & perfection';
 export const GROUP_NAME = 'Esaren International Group, UK';
 export const CORPORATE_HQ_ADDRESS = '51 Goldhill Plaza, Singapore 308900';
 export const OFFICIAL_WEBSITE = 'www.esaren.global';
+export const WHATSAPP_CONTACT = '+880 1714-072272';
+export const WHATSAPP_LINK = 'https://wa.me/8801714072272';
 
 export const MISSION_STATEMENT = 'We aim to serve our clients strength to strength.';
 export const VISION_STATEMENT =

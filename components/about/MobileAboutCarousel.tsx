@@ -44,7 +44,7 @@ export default function MobileAboutCarousel() {
         {/* Fixed header matching screenshot */}
         <div className="absolute top-0 left-0 right-0 z-30 pt-10 pb-4 px-6 bg-gradient-to-b from-[#f4f1ea] via-[#f4f1ea]/95 to-transparent pointer-events-none">
           <div className="space-y-2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-[#0c1a30] text-[11px] font-mono tracking-widest uppercase shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-gold text-[11px] tracking-widest uppercase shadow-sm font-semibold">
               <span>About Esaren Global</span>
             </div>
             <h2 className="text-xl sm:text-2xl font-serif font-bold text-[#0c1a30] tracking-tight leading-snug">
@@ -52,13 +52,13 @@ export default function MobileAboutCarousel() {
             </h2>
             <div className="flex items-center gap-6 pt-1">
               <div>
-                <span className="text-xl font-bold font-mono text-[#0c1a30]">$12B+</span>
-                <p className="text-[10px] text-slate-500 uppercase font-mono">Facilitated Assets</p>
+                <span className="text-xl font-bold text-[#0c1a30]">$1.4B+</span>
+                <p className="text-[10px] text-slate-500 uppercase">Delivered Assets</p>
               </div>
               <div className="w-px h-7 bg-slate-300" />
               <div>
-                <span className="text-xl font-bold font-mono text-[#1e3a8a]">35+</span>
-                <p className="text-[10px] text-slate-500 uppercase font-mono">Global Markets</p>
+                <span className="text-xl font-bold text-gold-dark">20+</span>
+                <p className="text-[10px] text-slate-500 uppercase">Global Countries</p>
               </div>
             </div>
           </div>

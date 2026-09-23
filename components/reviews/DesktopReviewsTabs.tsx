@@ -29,22 +29,22 @@ export default function DesktopReviewsTabs() {
         {/* Header */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
           <div className="lg:col-span-8 space-y-4">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-slate-200 text-[#0c1a30] text-xs font-mono tracking-widest uppercase shadow-sm">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#1e3a8a]" />
-              <span>Institutional Endorsements</span>
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full badge-gold text-xs tracking-widest uppercase shadow-sm font-semibold">
+              <ShieldCheck className="w-3.5 h-3.5 text-gold-dark" />
+              <span>Project Management Lifecycle</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold tracking-tight text-[#0c1a30]">
-              Endorsed By Sovereign & Corporate Leaders
+              Project Management Consulting Cycle
             </h2>
           </div>
           <div className="lg:col-span-4 lg:text-right space-y-2">
-            <div className="flex items-center lg:justify-end gap-1.5 text-[#1e3a8a]">
-              {[...Array(5)].map((_, i) => (
+            <div className="flex items-center lg:justify-end gap-1.5 text-gold">
+              {[...Array(4)].map((_, i) => (
                 <Star key={i} className="w-5 h-5 fill-current" />
               ))}
             </div>
-            <p className="text-xs font-mono text-slate-500 uppercase tracking-widest">
-              100% Verified Institutional Record
+            <p className="text-xs text-slate-500 uppercase tracking-widest">
+              Four Core Execution Phases
             </p>
           </div>
         </div>
@@ -69,14 +69,14 @@ export default function DesktopReviewsTabs() {
 
         {/* Footer navigation */}
         <div className="flex items-center justify-between pt-6 border-t border-slate-200/80">
-          <span className="text-xs font-mono text-slate-500 tracking-widest">
+          <span className="text-xs text-slate-500 tracking-widest">
             <span className="text-[#0c1a30] font-bold">0{activeIndex + 1}</span> / 0{TESTIMONIALS.length} ENDORSEMENTS
           </span>
           <div className="flex items-center gap-3">
             <button
               type="button"
               onClick={() => go((activeIndex - 1 + TESTIMONIALS.length) % TESTIMONIALS.length)}
-              className="w-11 h-11 rounded-full bg-white border border-slate-200 flex items-center justify-center text-[#0c1a30] hover:bg-[#0c1a30] hover:text-white transition-all shadow-sm cursor-pointer"
+              className="w-11 h-11 rounded-full icon-btn-navy flex items-center justify-center transition-all shadow-sm cursor-pointer"
               aria-label="Previous"
             >
               <ChevronLeft className="w-5 h-5" />
@@ -84,7 +84,7 @@ export default function DesktopReviewsTabs() {
             <button
               type="button"
               onClick={() => go((activeIndex + 1) % TESTIMONIALS.length)}
-              className="w-11 h-11 rounded-full bg-white border border-slate-200 flex items-center justify-center text-[#0c1a30] hover:bg-[#0c1a30] hover:text-white transition-all shadow-sm cursor-pointer"
+              className="w-11 h-11 rounded-full icon-btn-navy flex items-center justify-center transition-all shadow-sm cursor-pointer"
               aria-label="Next"
             >
               <ChevronRight className="w-5 h-5" />

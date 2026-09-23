@@ -21,9 +21,8 @@ export default function ProcessTimelineItem({ item, index }: ProcessTimelineItem
 
   return (
     <div
-      className={`relative flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-8 ${
-        isEven ? 'md:flex-row-reverse' : ''
-      }`}
+      className={`relative flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-8 ${isEven ? 'md:flex-row-reverse' : ''
+        }`}
     >
       {/* Tree Node Center Icon Circle (Pinned on Vertical Trunk Line) */}
       <motion.div
@@ -31,7 +30,7 @@ export default function ProcessTimelineItem({ item, index }: ProcessTimelineItem
         whileInView={{ scale: 1, opacity: 1 }}
         viewport={{ once: false, amount: 0.05 }}
         transition={{ duration: 0.4, delay: 0.08 }}
-        className="absolute left-6 md:left-1/2 -translate-x-1/2 w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-[#0c1a30] text-white border-4 border-[#f4f1ea] flex items-center justify-center shadow-xl z-20"
+        className="absolute left-6 md:left-1/2 -translate-x-1/2 w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-navy-gradient text-gold-light border-4 border-[#f4f1ea] flex items-center justify-center shadow-xl z-20"
       >
         <Icon className="w-5 h-5 md:w-6 md:h-6 stroke-[2]" />
       </motion.div>
@@ -52,23 +51,23 @@ export default function ProcessTimelineItem({ item, index }: ProcessTimelineItem
         }}
         className="w-full md:w-[45%] pl-16 sm:pl-20 md:pl-0 group"
       >
-        <div className="rounded-3xl bg-white border border-slate-200/80 p-6 sm:p-8 md:p-10 shadow-lg shadow-slate-900/5 hover:shadow-2xl hover:border-[#0c1a30]/40 transition-all duration-500 relative space-y-4">
+        <div className="rounded-3xl bg-white border border-slate-200/80 p-6 sm:p-8 md:p-10 shadow-lg shadow-slate-900/5 hover:shadow-2xl hover:border-gold-border card-hover-gold-accent transition-all duration-500 relative space-y-4">
           {/* Top Row: Phase Tag & Number */}
           <div className="flex items-center justify-between">
-            <span className="text-xs font-mono font-bold tracking-widest text-[#1e3a8a] uppercase bg-[#f8fafc] px-3.5 py-1.5 rounded-full border border-slate-200">
+            <span className="text-xs font-bold tracking-widest uppercase badge-gold px-3.5 py-1.5 rounded-full">
               {item.phase}
             </span>
-            <span className="text-2xl font-mono font-bold text-[#0c1a30]/30 group-hover:text-[#0c1a30] transition-colors">
+            <span className="text-2xl font-bold text-[#0c1a30]/30 group-hover:text-navy transition-colors">
               {item.step}
             </span>
           </div>
 
           {/* Step Title & Subtitle */}
           <div className="space-y-1">
-            <span className="text-xs font-mono text-[#1e3a8a] font-semibold block">
+            <span className="text-xs text-gold-dark font-semibold block">
               {item.managedBy}
             </span>
-            <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#0c1a30] leading-snug group-hover:text-[#1e3a8a] transition-colors">
+            <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#0c1a30] leading-snug group-hover:text-gold-dark transition-colors">
               {item.name}
             </h3>
           </div>
@@ -82,14 +81,14 @@ export default function ProcessTimelineItem({ item, index }: ProcessTimelineItem
           <ul className="space-y-2 pt-2 border-t border-slate-100 text-xs text-slate-600 font-light">
             {item.actions.slice(0, 3).map((action) => (
               <li key={action} className="flex items-start gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#1e3a8a] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-3.5 h-3.5 text-gold-dark shrink-0 mt-0.5" />
                 <span>{action}</span>
               </li>
             ))}
           </ul>
 
           {/* Bottom Link matching screenshot */}
-          <div className="pt-2 flex items-center gap-1.5 text-xs font-mono text-slate-400 group-hover:text-[#0c1a30] transition-colors">
+          <div className="pt-2 flex items-center gap-1.5 text-xs text-slate-400 group-hover:text-gold-dark transition-colors">
             <span>Verified Workflow</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </div>

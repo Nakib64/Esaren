@@ -16,7 +16,7 @@ export default function ProcessSection() {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="text-center max-w-3xl mx-auto mb-20 space-y-4"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-slate-200 text-[#0c1a30] text-xs font-mono tracking-widest uppercase shadow-sm">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full badge-gold text-xs tracking-widest uppercase shadow-sm font-semibold">
             <span>Stakeholders' Procedure in Consulting Work</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold tracking-tight text-[#0c1a30]">
@@ -30,7 +30,7 @@ export default function ProcessSection() {
         {/* Tree Timeline Container */}
         <div className="relative">
           {/* Continuous Vertical Trunk Line (Left side on Mobile, Center on Desktop) */}
-          <div className="absolute left-6 md:left-1/2 top-4 bottom-12 w-1 -translate-x-1/2 bg-gradient-to-b from-[#0c1a30] via-[#1e3a8a] to-[#0c1a30] rounded-full opacity-30 pointer-events-none" />
+          <div className="absolute left-6 md:left-1/2 top-4 bottom-12 w-1 -translate-x-1/2 bg-gradient-to-b from-[var(--navy-brand)] via-[var(--gold-primary)] to-[var(--navy-brand)] rounded-full opacity-40 pointer-events-none" />
 
           <div className="space-y-10 md:space-y-16">
             {CONSULTING_PROCESS.map((item, index) => (

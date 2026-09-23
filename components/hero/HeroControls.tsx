@@ -22,7 +22,7 @@ export default function HeroControls({ current, onPrev, onNext, onSelect }: Hero
             onClick={() => onSelect(index)}
             aria-label={`Go to slide ${index + 1}`}
             className={`h-1.5 rounded-full transition-all duration-500 ${
-              current === index ? 'w-10 bg-[#0c1a30]' : 'w-2 bg-slate-300 hover:bg-slate-400'
+              current === index ? 'w-10 bg-[var(--navy-brand)]' : 'w-2 bg-slate-300 hover:bg-[var(--gold-primary)]'
             }`}
           />
         ))}
@@ -34,7 +34,7 @@ export default function HeroControls({ current, onPrev, onNext, onSelect }: Hero
           type="button"
           onClick={onPrev}
           aria-label="Previous Slide"
-          className="w-12 h-12 rounded-full bg-white/90 border border-slate-200 flex items-center justify-center text-[#0c1a30] hover:bg-[#0c1a30] hover:text-white transition-all shadow-md active:scale-95"
+          className="w-12 h-12 rounded-full icon-btn-navy flex items-center justify-center transition-all shadow-md active:scale-95"
         >
           <ChevronLeft className="w-5 h-5" />
         </button>
@@ -42,7 +42,7 @@ export default function HeroControls({ current, onPrev, onNext, onSelect }: Hero
           type="button"
           onClick={onNext}
           aria-label="Next Slide"
-          className="w-12 h-12 rounded-full bg-white/90 border border-slate-200 flex items-center justify-center text-[#0c1a30] hover:bg-[#0c1a30] hover:text-white transition-all shadow-md active:scale-95"
+          className="w-12 h-12 rounded-full icon-btn-navy flex items-center justify-center transition-all shadow-md active:scale-95"
         >
           <ChevronRight className="w-5 h-5" />
         </button>

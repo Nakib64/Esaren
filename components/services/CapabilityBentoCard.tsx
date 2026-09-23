@@ -88,7 +88,7 @@ export default function CapabilityBentoCard({ service, index }: CapabilityBentoC
             </div>
           </Link>
 
-          <span className="text-xs font-mono text-slate-300 font-bold">
+          <span className="text-xs  text-slate-300 font-bold">
             {String(service.id).padStart(2, '0')}
           </span>
         </div>

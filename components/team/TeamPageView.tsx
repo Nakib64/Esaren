@@ -4,6 +4,7 @@ import { useState } from 'react';
 import SubpageHero from '@/components/ui/SubpageHero';
 import TeamCard from '@/components/ui/TeamCard';
 import { TEAM_MEMBERS } from '@/data/teamData';
+import { Users, ShieldCheck, Award } from 'lucide-react';
 
 const categories = ['All', 'Leadership', 'Management', 'Operations', 'Associates'] as const;
 type CategoryType = (typeof categories)[number];
@@ -22,7 +23,16 @@ export default function TeamPageView() {
         badge="Executive Council"
         title="Our Global Leadership & Management Team"
         description="Meet the accomplished partners, functional directors, and engineering leads steering Esaren Global’s project management consulting and venture operations across 20+ countries."
-        bgImage="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
+        graphicSrc="/images/hero_team_transparent.webp"
+        primaryCtaText="View 16 Council Members"
+        primaryCtaLink="#team-members"
+        secondaryCtaText="Connect With Leadership"
+        secondaryCtaLink="/contact"
+        pillars={[
+          { icon: Users, title: '16 Directors', subtitle: 'Global Council' },
+          { icon: ShieldCheck, title: '4-Tier Matrix', subtitle: 'Leadership & Ops' },
+          { icon: Award, title: 'International', subtitle: 'London, SG, Izmir, Dhaka' },
+        ]}
       />
 
       <section className="py-20 md:py-28 bg-[#f9f6f0] text-[#0c1a30]">
@@ -34,10 +44,8 @@ export default function TeamPageView() {
                 key={cat}
                 type="button"
                 onClick={() => setActiveCategory(cat)}
-                className={`px-5 py-2 rounded-full text-xs font-mono font-medium uppercase tracking-wider transition-all duration-300 shrink-0 border ${
-                  activeCategory === cat
-                    ? 'bg-[#0c1a30] text-white border-[#0c1a30] shadow-md'
-                    : 'bg-white text-slate-600 border-slate-200 hover:border-slate-400'
+                className={`px-5 py-2 rounded-full text-xs font-medium uppercase tracking-wider transition-all duration-300 shrink-0 border ${
+                  activeCategory === cat ? 'badge-filter-active' : 'badge-filter-inactive'
                 }`}
               >
                 {cat} {cat === 'All' ? `(${TEAM_MEMBERS.length})` : ''}

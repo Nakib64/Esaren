@@ -36,8 +36,8 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 w-full pt-28 pb-16 flex flex-col justify-between h-full">
         <div className="flex-1 flex flex-col justify-center max-w-4xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-slate-200 text-[#0c1a30] text-xs font-mono tracking-widest uppercase mb-6 shadow-md w-fit font-bold">
-            <IconComponent className="w-3.5 h-3.5 text-[#1e3a8a]" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full badge-gold text-xs tracking-widest uppercase mb-6 shadow-sm w-fit font-bold">
+            <IconComponent className="w-3.5 h-3.5 text-[#8e6814]" />
             <span>{activeSlide.tag}</span>
           </div>
 
@@ -48,7 +48,7 @@ export default function HeroSection() {
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="space-y-6"
           >
-            <h2 className="text-xs md:text-sm font-bold tracking-widest uppercase text-[#1e3a8a] font-mono">
+            <h2 className="text-xs md:text-sm font-bold tracking-widest uppercase text-[#8e6814]">
               {activeSlide.subtitle}
             </h2>
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif font-bold tracking-tight text-[#0c1a30] leading-[1.15]">
@@ -62,17 +62,17 @@ export default function HeroSection() {
             <div className="pt-4 flex flex-wrap gap-4 items-center">
               <Link
                 href={activeSlide.primaryLink}
-                className="group px-7 py-4 rounded-full bg-[#0c1a30] text-white font-bold text-xs uppercase tracking-widest flex items-center gap-3 hover:bg-[#1e3a8a] transition-all shadow-lg hover:scale-105"
+                className="group px-7 py-4 rounded-full btn-navy-gold font-bold text-xs uppercase tracking-widest flex items-center gap-3 shadow-lg hover:scale-105"
               >
                 <span>{activeSlide.primaryText}</span>
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="w-4 h-4 text-[#dfba54] transition-transform group-hover:translate-x-1" />
               </Link>
               <Link
                 href="/about"
-                className="px-7 py-4 rounded-full bg-white/90 border border-slate-300 text-[#0c1a30] font-bold text-xs uppercase tracking-widest flex items-center gap-2 hover:bg-white hover:border-slate-400 transition-all shadow-sm"
+                className="px-7 py-4 rounded-full btn-gold-outline font-bold text-xs uppercase tracking-widest flex items-center gap-2 shadow-sm"
               >
                 <span>About Esaren Global</span>
-                <ArrowUpRight className="w-4 h-4" />
+                <ArrowUpRight className="w-4 h-4 text-[#8e6814]" />
               </Link>
             </div>
           </motion.div>

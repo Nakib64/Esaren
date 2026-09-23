@@ -26,15 +26,13 @@ export default function ReviewTabItem({
       viewport={{ once: false, amount: 0.1 }}
       transition={{ duration: 0.5, delay: idx * 0.07, ease: [0.16, 1, 0.3, 1] }}
       className={`text-left p-6 rounded-2xl border transition-all duration-400 cursor-pointer flex items-center justify-between w-full ${
-        isActive
-          ? 'bg-[#0c1a30] text-white border-[#0c1a30] shadow-lg shadow-slate-900/15 translate-x-1'
-          : 'bg-white text-[#0c1a30] border-slate-200/80 hover:border-slate-400 hover:bg-slate-50 shadow-sm'
+        isActive ? 'review-tab-active' : 'review-tab-inactive'
       }`}
     >
       <div className="space-y-1">
         <span
-          className={`text-[10px] font-mono tracking-widest uppercase block ${
-            isActive ? 'text-sky-300' : 'text-[#1e3a8a]'
+          className={`text-[10px] tracking-widest uppercase block font-semibold ${
+            isActive ? 'text-gold-light' : 'text-gold-dark'
           }`}
         >
           {item.organization}
@@ -52,7 +50,7 @@ export default function ReviewTabItem({
       </div>
       <div
         className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors ${
-          isActive ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-600'
+          isActive ? 'bg-white/15 text-gold-lighter' : 'bg-slate-100 text-slate-600'
         }`}
       >
         <ArrowRight className="w-4 h-4" />

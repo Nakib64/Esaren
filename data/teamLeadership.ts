@@ -55,18 +55,18 @@ export const TEAM_LEADERSHIP: TeamMember[] = [
   },
   {
     name: 'Faisal Sarker',
-    role: 'Country Director, Singapore',
-    category: 'Management',
-    location: 'Singapore',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop',
-    bio: 'Overseeing regional business development, asset facilitation, and investor coordination in Southeast Asia.',
-  },
-  {
-    name: 'Kelvin Chan',
     role: 'Country Director, Bangladesh',
     category: 'Management',
     location: 'Bangladesh',
+    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop',
+    bio: 'Driving ground-level operational compliance, contractor alignments, and infrastructure project delivery.',
+  },
+  {
+    name: 'Kelvin Chan',
+    role: 'Country Director, Singapore',
+    category: 'Management',
+    location: 'Singapore',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1974&auto=format&fit=crop',
-    bio: 'Driving ground-level operational compliance, contractor alignments, and sovereign infrastructure delivery.',
+    bio: 'Overseeing regional business development, asset facilitation, and investor coordination in Southeast Asia.',
   },
 ];

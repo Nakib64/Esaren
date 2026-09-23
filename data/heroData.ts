@@ -1,4 +1,4 @@
-import { Building2, TrendingUp, Cpu } from 'lucide-react';
+import { Building2, TrendingUp, Award } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 export interface HeroSlide {
@@ -22,7 +22,7 @@ export const HERO_SLIDES: HeroSlide[] = [
       'Esaren Global Ltd delivers world-class PMC and EPC execution across high-capacity highway networks, bridge corridors, deep-sea SPM/LNG facilities, and power grids.',
     tag: 'Project Management Consulting',
     icon: Building2,
-    bgImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop',
+    bgImage: '/images/hero_slide_1.webp',
     primaryLink: '/services',
     primaryText: 'Explore Capabilities',
   },
@@ -34,7 +34,7 @@ export const HERO_SLIDES: HeroSlide[] = [
       'Fostering breakthrough startups, 3D robotics, and cross-border joint ventures backed by Singapore-based fund management and institutional capital syndication.',
     tag: 'Venture Management',
     icon: TrendingUp,
-    bgImage: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop',
+    bgImage: '/images/hero_slide_2.webp',
     primaryLink: '/ventures',
     primaryText: 'Explore Ventures',
   },
@@ -45,8 +45,8 @@ export const HERO_SLIDES: HeroSlide[] = [
     description:
       'From the Trans-Sumatra 614km expressway in Indonesia to utility solar in Sri Lanka and SPM refinery terminals, we deliver multi-million dollar assets on budget.',
     tag: 'Track Record & Megaprojects',
-    icon: Cpu,
-    bgImage: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?q=80&w=2070&auto=format&fit=crop',
+    icon: Award,
+    bgImage: '/images/hero_slide_3.webp',
     primaryLink: '/projects',
     primaryText: 'View Landmark Projects',
   },
