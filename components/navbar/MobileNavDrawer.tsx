@@ -35,9 +35,16 @@ export default function MobileNavDrawer({ isOpen, onClose }: MobileNavDrawerProp
           >
             {/* Header */}
             <div className="flex items-center justify-between pb-6 border-b border-white/10">
-              <span className="font-serif text-lg font-bold tracking-wider uppercase">
-                Esaren<span className="text-white/40 font-light">Global</span>
-              </span>
+              <Link href="/" onClick={onClose} className="flex items-center gap-2.5">
+                <img
+                  src="/images/logo.png"
+                  alt="EGL Logo"
+                  className="h-8 w-auto object-contain"
+                />
+                <span className="font-serif text-base font-bold tracking-wider uppercase">
+                  Esaren<span className="text-white/40 font-light">Global</span>
+                </span>
+              </Link>
               <button
                 type="button"
                 onClick={onClose}

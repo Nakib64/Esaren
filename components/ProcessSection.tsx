@@ -17,7 +17,7 @@ export default function ProcessSection() {
           className="text-center max-w-3xl mx-auto mb-20 space-y-4"
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full badge-gold text-xs tracking-widest uppercase shadow-sm font-semibold">
-            <span>Stakeholders' Procedure in Consulting Work</span>
+            <span>Core Activity 01 • PMC Stakeholders' Procedure</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold tracking-tight text-[#0c1a30]">
             From Vision To Sovereign Execution

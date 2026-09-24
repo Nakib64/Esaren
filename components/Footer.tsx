@@ -22,19 +22,11 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full sm:w-auto">
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-4 rounded-full bg-[#25D366] text-white font-bold text-xs uppercase tracking-widest flex items-center gap-2 hover:bg-[#20ba5a] transition-all shadow-md w-full sm:w-auto justify-center"
-            >
+            <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="px-6 py-4 rounded-full bg-[#25D366] text-white font-bold text-xs uppercase tracking-widest flex items-center gap-2 hover:bg-[#20ba5a] transition-all shadow-md w-full sm:w-auto justify-center">
               <MessageCircle className="w-4 h-4 fill-current" />
               <span>WhatsApp Direct</span>
             </a>
-            <Link
-              href="/contact"
-              className="px-8 py-4 rounded-full btn-gold-outline font-bold text-xs uppercase tracking-widest flex items-center gap-2 w-full sm:w-auto justify-center"
-            >
+            <Link href="/contact" className="px-8 py-4 rounded-full btn-gold-outline font-bold text-xs uppercase tracking-widest flex items-center gap-2 w-full sm:w-auto justify-center">
               <span>Contact Offices</span>
               <ArrowUpRight className="w-4 h-4" />
             </Link>
@@ -46,7 +38,11 @@ export default function Footer() {
           {/* Brand info */}
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-navy-gradient border border-gold flex items-center justify-center text-gold-light font-serif font-bold text-base">E</div>
+              <img
+                src="/images/logo.png"
+                alt="EGL Logo"
+                className="h-8 w-auto object-contain"
+              />
               <span className="font-serif text-lg font-bold tracking-wider text-[#0c1a30] uppercase">
                 Esaren<span className="text-slate-500 font-light">Global</span>
               </span>

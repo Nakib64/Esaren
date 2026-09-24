@@ -15,7 +15,7 @@ export default function ProjectsSection() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-6 border-b border-slate-200">
           <div className="space-y-3 max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full badge-gold text-xs tracking-widest uppercase shadow-sm font-semibold">
-              <span>Landmark Track Record</span>
+              <span>Core Activity 01 • Completed PMC Megaprojects</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#0c1a30] tracking-tight">
               USD 1.4 Billion+ in Completed Projects

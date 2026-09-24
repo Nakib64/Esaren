@@ -23,9 +23,9 @@ export default function PartnerSection() {
       <div className="absolute right-0 top-0 bottom-0 w-36 bg-gradient-to-l from-[#f4f1ea] to-transparent z-10 pointer-events-none" />
 
       <div className="max-w-[1600px] mx-auto px-6 mb-12 text-center space-y-3">
-        <span className="text-xs tracking-[0.3em] text-gold-dark uppercase font-bold">
-          Global Strategic Alliances
-        </span>
+        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full badge-gold text-xs tracking-widest uppercase shadow-sm font-semibold mx-auto">
+          <span>Core Activity 02 • Strategic Joint Ventures</span>
+        </div>
         <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#0c1a30] tracking-tight">
           Joint Ventures & Institutional Co-Development
         </h2>

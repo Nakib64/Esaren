@@ -29,7 +29,7 @@ export default function ServicesMegaMenu({ onClose }: ServicesMegaMenuProps) {
         <div className="flex items-center justify-between pb-3 border-b border-slate-200/60 text-xs">
           <div className="flex items-center gap-2 text-[#0c1a30]">
             <div className="w-2 h-2 rounded-full bg-[#c59b27] animate-pulse" />
-            <span className="font-bold tracking-widest uppercase">Infrastructure Competencies & EPC</span>
+            <span className="font-bold tracking-widest uppercase">Core Activity 01 • Project Management Consulting</span>
           </div>
           <span className="text-[11px] text-[#8e6814] uppercase tracking-wider font-semibold">USD 1.4B+ Portfolio</span>
         </div>
