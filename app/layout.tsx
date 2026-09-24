@@ -20,8 +20,10 @@ const raleway = Raleway({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://esaren.saasfactry.com';
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.esaren.global'),
+  metadataBase: new URL(siteUrl),
   title: 'Esaren Global | International Venture & Strategic Infrastructure',
   description:
     'Esaren Global partners with governments, corporations, investors, and development organizations to transform ambitious ideas into successful international ventures.',
