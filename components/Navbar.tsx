@@ -27,11 +27,13 @@ export default function Navbar() {
       onMouseLeave={() => setMegaOpen(false)}
     >
       <div className="max-w-[1600px] mx-auto px-6 md:px-12 flex items-center justify-between">
-        {/* Brand Logo with Neumorphic Specular Touch */}
+        {/* Brand Logo with Actual EGL Winged Shield Emblem */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 rounded-2xl bg-gradient-to-br from-[#091322] via-[#11254a] to-[#1a3868] text-[#dfba54] border border-[#c59b27]/40 flex items-center justify-center font-serif font-bold text-base shadow-[0_4px_12px_rgba(9,19,34,0.35),inset_0_1px_1px_rgba(255,255,255,0.2)] transition-transform group-hover:scale-105">
-            E
-          </div>
+          <img
+            src="/images/logo.png"
+            alt="EGL Logo"
+            className="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105"
+          />
           <div className="flex flex-col">
             <span className="font-serif text-lg font-bold tracking-wider text-[#0c1a30] uppercase leading-none">
               Esaren<span className="text-slate-400 font-light ml-0.5">Global</span>

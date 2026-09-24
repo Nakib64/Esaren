@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono, Raleway } from 'next/font/google';
 import WhatsAppButton from '@/components/ui/WhatsAppButton';
+import ImageProtection from '@/components/ImageProtection';
 import './globals.css';
 
 const geistSans = Geist({
@@ -20,9 +21,43 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.esaren.global'),
   title: 'Esaren Global | International Venture & Strategic Infrastructure',
   description:
     'Esaren Global partners with governments, corporations, investors, and development organizations to transform ambitious ideas into successful international ventures.',
+  icons: {
+    icon: [
+      { url: '/icon-48x48.png', sizes: '48x48', type: 'image/png' },
+      { url: '/icon-64x64.png', sizes: '64x64', type: 'image/png' },
+      { url: '/icon-96x96.png', sizes: '96x96', type: 'image/png' },
+    ],
+    shortcut: '/icon-48x48.png',
+    apple: '/apple-icon.png',
+  },
+  openGraph: {
+    title: 'Esaren Global | International Venture & Strategic Infrastructure',
+    description:
+      'International venture management & project management consulting across Singapore, London, Izmir, and Dhaka.',
+    url: 'https://www.esaren.global',
+    siteName: 'Esaren Global',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Esaren Global - International Venture & Strategic Infrastructure',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Esaren Global | International Venture & Strategic Infrastructure',
+    description:
+      'International venture management & project management consulting across Singapore, London, Izmir, and Dhaka.',
+    images: ['/images/og-image.jpg'],
+  },
 };
 
 export default function RootLayout({
@@ -36,6 +71,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#f9f6f0] text-[#0c1a30]">
+        <ImageProtection />
         {children}
         <WhatsAppButton />
       </body>

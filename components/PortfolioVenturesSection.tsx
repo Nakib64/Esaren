@@ -19,13 +19,13 @@ export default function PortfolioVenturesSection() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-6 border-b border-slate-200">
           <div className="space-y-3 max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full badge-gold text-xs tracking-widest uppercase shadow-sm font-semibold">
-              <span>Venture Development & JVs</span>
+              <span>Core Activity 02 • Venture Management & Incubation</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#0c1a30] tracking-tight">
               Startups, Robotics & Strategic Alliances
             </h2>
             <p className="text-slate-600 text-base font-light leading-relaxed">
-              Branching into startup incubation and venture development with Singapore-based Fund Management, 3D construction robotics, private aviation, and cross-border partnerships.
+              Under Core Activity 02, EGL branches into startup incubation, Singapore-based Fund Management, 3D construction robotics, private aviation, and strategic cross-border Joint Ventures.
             </p>
           </div>
 

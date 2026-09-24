@@ -100,10 +100,10 @@ export default function SubpageHero({
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-6 relative flex items-center justify-center lg:justify-end"
           >
-            <div className="relative w-full max-w-[620px] aspect-[574/505]">
+            <div className="relative w-full">
               <img
                 src={graphicSrc}
-                alt={title}
+                alt={title} 
                 className="w-full h-full object-contain filter drop-shadow-xl"
               />
             </div>

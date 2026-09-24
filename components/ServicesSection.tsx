@@ -15,13 +15,13 @@ export default function ServicesSection() {
         {/* Section Header */}
         <div className="space-y-4 text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full badge-gold text-xs tracking-widest uppercase shadow-sm font-semibold">
-            <span>Capabilities & Ventures</span>
+            <span>Core Activity 01 • Project Management Consulting</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold tracking-tight text-[#0c1a30]">
             14 Key Expertise in Infrastructure Consulting
           </h2>
           <p className="text-slate-600 text-base md:text-lg font-light leading-relaxed">
-            Our specialized engineering, project management, and turnkey consulting capabilities powering national transport corridors, telecommunications, and industrial energy infrastructure.
+            Under Core Activity 01, EGL provides specialized engineering, project management, and turnkey consulting powering national transport corridors, telecommunications, and industrial energy infrastructure.
           </p>
         </div>
 

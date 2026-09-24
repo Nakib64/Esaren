@@ -13,7 +13,7 @@ export default function ContactPageView() {
         badge="Global Inquiries"
         title="Connect With Our Global Advisory Hubs"
         description="Initiate discussions regarding project management consulting, infrastructure joint ventures, or fund management with our senior partners across Singapore, London, Izmir, and Dhaka."
-        graphicSrc="/images/hero_contact_transparent.webp"
+        graphicSrc="/images/logo.png"
         primaryCtaText="WhatsApp Direct"
         primaryCtaLink={WHATSAPP_LINK}
         secondaryCtaText="Email Corporate Advisory"

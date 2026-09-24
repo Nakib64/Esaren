@@ -20,7 +20,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     subtitle: 'Civil, Bridge & Telecommunications Infrastructure',
     description:
       'Esaren Global Ltd delivers world-class PMC and EPC execution across high-capacity highway networks, bridge corridors, deep-sea SPM/LNG facilities, and power grids.',
-    tag: 'Project Management Consulting',
+    tag: 'Core Activity 01 • Project Management Consulting',
     icon: Building2,
     bgImage: '/images/hero_slide_1.webp',
     primaryLink: '/services',
@@ -32,7 +32,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     subtitle: 'Incubation, Fund Advisory & Global Alliances',
     description:
       'Fostering breakthrough startups, 3D robotics, and cross-border joint ventures backed by Singapore-based fund management and institutional capital syndication.',
-    tag: 'Venture Management',
+    tag: 'Core Activity 02 • Venture Management & JVs',
     icon: TrendingUp,
     bgImage: '/images/hero_slide_2.webp',
     primaryLink: '/ventures',
@@ -44,7 +44,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     subtitle: 'Operating Across 20+ Countries Worldwide',
     description:
       'From the Trans-Sumatra 614km expressway in Indonesia to utility solar in Sri Lanka and SPM refinery terminals, we deliver multi-million dollar assets on budget.',
-    tag: 'Track Record & Megaprojects',
+    tag: 'Delivered Track Record • $1.4B+ Global Assets',
     icon: Award,
     bgImage: '/images/hero_slide_3.webp',
     primaryLink: '/projects',

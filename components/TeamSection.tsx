@@ -3,11 +3,10 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import TeamCard from '@/components/ui/TeamCard';
-import { TEAM_MEMBERS } from '@/data/teamData';
+import ExecutiveSpotlightCard from '@/components/team/ExecutiveSpotlightCard';
+import { REVISED_LEADERSHIP } from '@/data/revisedTeamLeadership';
 
 export default function TeamSection() {
-  const leadership = TEAM_MEMBERS.filter((m) => m.category === 'Leadership');
-
   return (
     <section id="team" className="py-24 md:py-32 bg-[#f9f6f0] text-[#0c1a30]">
       <div className="max-w-[1600px] mx-auto px-6 md:px-12 space-y-16">
@@ -21,7 +20,7 @@ export default function TeamSection() {
               Our Global Executive Council
             </h2>
             <p className="text-slate-600 text-base font-light leading-relaxed">
-              Stewarding high-level governance, cross-border financing, and technical project management across London, Singapore, Izmir, and Dhaka.
+              Stewarding high-level governance, sovereign infrastructure financing, and cross-border joint ventures across London, Singapore, Izmir, and Dhaka.
             </p>
           </div>
 
@@ -29,16 +28,22 @@ export default function TeamSection() {
             href="/team"
             className="group px-6 py-3.5 rounded-full btn-navy-gold font-bold text-xs uppercase tracking-widest flex items-center gap-3 shrink-0 self-start lg:self-end"
           >
-            <span>Meet All 16 Members & Directors</span>
+            <span>Explore All 12 Directors & Field Gallery</span>
             <ArrowRight className="w-4 h-4 text-gold-light group-hover:text-gold-lighter transition-transform group-hover:translate-x-1" />
           </Link>
         </div>
 
-        {/* 4 Primary Leaders Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {leadership.map((member, index) => (
-            <TeamCard key={member.name} member={member} index={index} />
-          ))}
+        {/* Executive Bento Spotlight: Group Photo Left + 4 Key Leaders Right */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          <div className="lg:col-span-5 h-full">
+            <ExecutiveSpotlightCard />
+          </div>
+
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {REVISED_LEADERSHIP.map((member, index) => (
+              <TeamCard key={member.name} member={member} index={index} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
