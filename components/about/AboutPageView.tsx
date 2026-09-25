@@ -4,6 +4,7 @@ import SubpageHero from '@/components/ui/SubpageHero';
 import { MISSION_STATEMENT, VISION_STATEMENT, GROUP_NAME } from '@/data/brandData';
 import { ABOUT_PILLARS } from '@/data/aboutPillars';
 import DesktopPillarCard from '@/components/about/DesktopPillarCard';
+import AboutGallerySection from '@/components/about/AboutGallerySection';
 import { Target, Eye, Globe2, Building2, ShieldCheck } from 'lucide-react';
 
 export default function AboutPageView() {
@@ -19,7 +20,7 @@ export default function AboutPageView() {
         secondaryCtaText="Contact Executive Hubs"
         secondaryCtaLink="/contact"
         pillars={[
-          { icon: Building2, title: '4 Global Hubs', subtitle: 'London, SG, Izmir, Dhaka' },
+          { icon: Building2, title: '4 Global Hubs', subtitle: 'Singapore, London, Guangzhou, Lagos' },
           { icon: Globe2, title: '20+ Countries', subtitle: 'Global Clientele' },
           { icon: ShieldCheck, title: '$620M Pipeline', subtitle: 'London Group HQ' },
         ]}
@@ -76,6 +77,9 @@ export default function AboutPageView() {
           </div>
         </div>
       </section>
+
+      {/* Photo Gallery Section */}
+      <AboutGallerySection />
     </div>
   );
 }

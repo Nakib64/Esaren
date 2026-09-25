@@ -6,9 +6,9 @@ import ScrollToTop from '@/components/ScrollToTop';
 import TeamPageView from '@/components/team/TeamPageView';
 
 export const metadata: Metadata = {
-  title: 'Executive Leadership & Management Team | Esaren Global',
+  title: 'Executive Leadership & Strategic Advisory Board | Esaren Global',
   description:
-    'Explore the global executive council, managing partners, and operational directors of Esaren Global Ltd across London, Singapore, Izmir, and Dhaka.',
+    'Explore the global executive council, strategic advisory board, and operational directors of Esaren Global Ltd across Singapore, London, Guangzhou, and Lagos.',
 };
 
 export default function TeamPage() {

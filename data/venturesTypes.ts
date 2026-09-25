@@ -12,6 +12,6 @@ export interface PortfolioVenture extends BaseVenture {
 }
 
 export interface JointVenture extends BaseVenture {
-  category?: 'Strategic Joint Venture';
+  category?: 'Strategic Partner' | 'Strategic Joint Venture';
   website?: string;
 }

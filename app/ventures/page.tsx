@@ -6,9 +6,9 @@ import ScrollToTop from '@/components/ScrollToTop';
 import VenturesPageView from '@/components/ventures/VenturesPageView';
 
 export const metadata: Metadata = {
-  title: 'Venture Management & Strategic Joint Ventures | Esaren Global',
+  title: 'Venture Management & Our Strategic Partners | Esaren Global',
   description:
-    'Discover Esaren Global’s portfolio ventures and strategic international joint ventures spanning 3D robotics, tech integration, private aviation, and healthcare.',
+    'Discover Esaren Global’s portfolio ventures and strategic institutional partners spanning tech integration, private aviation, fund management, and healthcare.',
 };
 
 export default function VenturesPage() {

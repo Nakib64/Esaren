@@ -17,7 +17,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 export const metadata: Metadata = {
   title: 'Esaren Global | Project Management Consulting & Venture Management',
   description:
-    'Esaren Global Ltd (EGL) is a concern of Esaren International Group, UK, operating across London, Singapore, Izmir, and Dhaka with over USD 1.4 Billion in global infrastructure deliveries.',
+    'Esaren Global Ltd (EGL) is a concern of Esaren International Group, UK, operating across Singapore, London, Guangzhou, and Lagos with over USD 1.4 Billion in global infrastructure deliveries.',
 };
 
 export default function Home() {

@@ -35,7 +35,7 @@ export default function AboutSection() {
               </div>
               <div className="lg:col-span-5 space-y-5">
                 <p className="text-slate-600 text-base md:text-lg font-light leading-relaxed">
-                  Esaren Global Ltd operates across four international hubs—London, Singapore, Izmir, and Dhaka—directing high-stakes PMC infrastructure deliveries, venture development, and cross-border partnerships.
+                  Esaren Global Ltd operates across four international hubs—Singapore, London, Guangzhou, and Lagos—directing high-stakes PMC infrastructure deliveries, venture development, and cross-border partnerships.
                 </p>
                 <div className="flex items-center gap-8">
                   <div>

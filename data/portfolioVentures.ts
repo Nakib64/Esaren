@@ -2,30 +2,12 @@ import { PortfolioVenture } from './venturesTypes';
 
 export const PORTFOLIO_VENTURES: PortfolioVenture[] = [
   {
-    name: 'Camhirst Robotics',
-    country: 'United Kingdom',
-    focus: '3D Construction Robotics',
-    description: 'Advanced 3D construction manufacturing providing autonomous robotic systems for accelerated building and infrastructure projects.',
-    monogram: 'CR',
-    highlight: 'Autonomous 3D Manufacturing',
-    category: 'Portfolio Venture',
-  },
-  {
     name: 'Nirvik Foundation',
     country: 'Bangladesh',
     focus: 'Social Welfare & Diaspora Support',
     description: 'Delivering education, healthcare, social awareness campaigns, and legal advocacy for the migrant diaspora facing displacement.',
     monogram: 'NF',
     highlight: 'Legal & Diaspora Advocacy',
-    category: 'Portfolio Venture',
-  },
-  {
-    name: 'Kormi Platform',
-    country: 'Bangladesh',
-    focus: 'Workforce Verification & Placement',
-    description: 'Digital ecosystem providing certified credentials, skill verification, and ethical overseas employment opportunities.',
-    monogram: 'KP',
-    highlight: 'Ethical Global Placement',
     category: 'Portfolio Venture',
   },
   {

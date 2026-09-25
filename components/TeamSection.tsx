@@ -20,7 +20,7 @@ export default function TeamSection() {
               Our Global Executive Council
             </h2>
             <p className="text-slate-600 text-base font-light leading-relaxed">
-              Stewarding high-level governance, sovereign infrastructure financing, and cross-border joint ventures across London, Singapore, Izmir, and Dhaka.
+              Stewarding high-level governance, sovereign infrastructure financing, and cross-border joint ventures across Singapore, London, Guangzhou, and Lagos.
             </p>
           </div>
 
@@ -28,7 +28,7 @@ export default function TeamSection() {
             href="/team"
             className="group px-6 py-3.5 rounded-full btn-navy-gold font-bold text-xs uppercase tracking-widest flex items-center gap-3 shrink-0 self-start lg:self-end"
           >
-            <span>Explore All 12 Directors & Field Gallery</span>
+            <span>Explore Leadership & Strategic Advisory Board</span>
             <ArrowRight className="w-4 h-4 text-gold-light group-hover:text-gold-lighter transition-transform group-hover:translate-x-1" />
           </Link>
         </div>

@@ -10,7 +10,7 @@ export interface GlobalOffice {
 
 export const BRAND_TAGLINE = 'Stronger bonds with unity & perfection';
 export const GROUP_NAME = 'Esaren International Group, UK';
-export const CORPORATE_HQ_ADDRESS = '51 Goldhill Plaza, Singapore 308900';
+export const CORPORATE_HQ_ADDRESS = '60 Paya Lebar Road, #06-28, Paya Lebar Square, Singapore 409051';
 export const OFFICIAL_WEBSITE = 'www.esaren.global';
 export const WHATSAPP_CONTACT = '+880 1714-072272';
 export const WHATSAPP_LINK = 'https://wa.me/8801714072272';
@@ -21,9 +21,20 @@ export const VISION_STATEMENT =
 
 export const GLOBAL_OFFICES: GlobalOffice[] = [
   {
+    city: 'Singapore',
+    role: 'Corporate HQ',
+    keyPersonnel: 'Corporate Fund Directorate',
+    responsibilities: [
+      'Central fund management & venture operations',
+      'Global business development across 20+ countries',
+      'Cross-border strategic capital partnerships',
+    ],
+    clientReach: '20+ Global Countries',
+  },
+  {
     city: 'London',
     role: 'Group HQ',
-    keyPersonnel: 'Mr. Suresh Sivarajah',
+    keyPersonnel: 'Group Governance Directorate',
     responsibilities: [
       'All corporate governance and compliance',
       'International financing and legal structuring',
@@ -33,20 +44,9 @@ export const GLOBAL_OFFICES: GlobalOffice[] = [
     underConsideration: 'USD 330 Million',
   },
   {
-    city: 'Singapore',
-    role: 'Corporate HQ',
-    keyPersonnel: 'Ms. Catherine Wong',
-    responsibilities: [
-      'Central fund management & venture operations',
-      'Global business development across 20+ countries',
-      'Cross-border strategic capital partnerships',
-    ],
-    clientReach: '20+ Global Countries',
-  },
-  {
-    city: 'Izmir',
-    role: 'Project Management Office (PMO)',
-    keyPersonnel: 'Mr. Emre Cekemoglu',
+    city: 'Guangzhou',
+    role: 'PMO & Technical EPC',
+    keyPersonnel: 'Technical EPC Directorate',
     responsibilities: [
       'Engineering, procurement & construction (EPC) execution',
       'On-site technical direction & quality control',
@@ -54,9 +54,9 @@ export const GLOBAL_OFFICES: GlobalOffice[] = [
     ],
   },
   {
-    city: 'Dhaka',
-    role: 'Back-End Operations Office',
-    keyPersonnel: 'Mr. Ruhsan Rahman',
+    city: 'Lagos',
+    role: 'Back-End Operations',
+    keyPersonnel: 'Operational Support Directorate',
     responsibilities: [
       'Internal coordination & shared support services',
       'Venture support & operational workforce deployment',

@@ -4,12 +4,11 @@ import { motion } from 'framer-motion';
 import { Building2, Globe, Shield, Landmark, Plane, HeartPulse, GraduationCap, Cpu } from 'lucide-react';
 
 const partners = [
-  { name: 'Whitespace', country: 'Canada', type: 'Technology JV', icon: Cpu },
-  { name: 'Zenith Advisory', country: 'Singapore', type: 'Fund Management JV', icon: Landmark },
-  { name: 'Fortius Engineering', country: 'Turkey', type: 'EPC Engineering JV', icon: Building2 },
-  { name: 'Ural Air', country: 'Bangladesh', type: 'Private Aviation JV', icon: Plane },
-  { name: 'Carnival Healthcare', country: 'UK & Kenya', type: 'Diagnostics & Pharma JV', icon: HeartPulse },
-  { name: 'Altius Corporation', country: 'Bangladesh', type: 'Trading & Human Capital', icon: Globe },
+  { name: 'Whitespace', country: 'Canada', type: 'Technology Partner', icon: Cpu },
+  { name: 'Zenith Advisory', country: 'Singapore', type: 'Fund Management Partner', icon: Landmark },
+  { name: 'Fortius Engineering', country: 'Bangladesh', type: 'EPC Engineering Partner', icon: Building2 },
+  { name: 'Orient Healthcare', country: 'Global', type: 'Diagnostics & Pharma Partner', icon: HeartPulse },
+  { name: 'Ural Air', country: 'Bangladesh', type: 'Private Aviation Partner', icon: Plane },
   { name: 'Citius Training', country: 'Bangladesh', type: 'Vocational Upskilling', icon: GraduationCap },
   { name: 'ILF Engineers', country: 'Germany', type: 'SPM Refinery Partner', icon: Shield },
   { name: 'Rolls Royce Power', country: 'UK', type: '110MW Solar Partner', icon: Building2 },
@@ -24,10 +23,10 @@ export default function PartnerSection() {
 
       <div className="max-w-[1600px] mx-auto px-6 mb-12 text-center space-y-3">
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full badge-gold text-xs tracking-widest uppercase shadow-sm font-semibold mx-auto">
-          <span>Core Activity 02 • Strategic Joint Ventures</span>
+          <span>Core Activity 02 • Our Strategic Partners</span>
         </div>
         <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#0c1a30] tracking-tight">
-          Joint Ventures & Institutional Co-Development
+          Our Strategic Partners & Institutional Alliances
         </h2>
       </div>
 

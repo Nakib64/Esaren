@@ -34,12 +34,9 @@ export default function Navbar() {
             alt="EGL Logo"
             className="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105"
           />
-          <div className="flex flex-col">
-            <span className="font-serif text-lg font-bold tracking-wider text-[#0c1a30] uppercase leading-none">
-              Esaren<span className="text-slate-400 font-light ml-0.5">Global</span>
-            </span>
-            <span className="text-[9px] tracking-widest text-[#8e6814] uppercase mt-0.5 font-bold">
-              International
+          <div className="flex items-center">
+            <span className="font-serif text-lg font-bold tracking-wider uppercase leading-none text-[#0c1a30]">
+              ESAREN <span className="text-[#c5a059]">GLOBAL</span>
             </span>
           </div>
         </Link>
@@ -50,26 +47,26 @@ export default function Navbar() {
           onMouseLeave={() => setMegaOpen(false)}
         >
           {MAIN_NAV_LINKS.map((link) => {
-            const isCapabilities = link.name === 'Capabilities';
+            const isPMC = link.name === 'Project Management Consulting';
             return (
               <div
                 key={link.name}
                 className="relative"
                 onMouseEnter={() => {
-                  if (isCapabilities) setMegaOpen(true);
+                  if (isPMC) setMegaOpen(true);
                   else setMegaOpen(false);
                 }}
               >
                 <Link
                   href={link.href}
                   className={`px-4 py-2 rounded-full text-xs font-medium uppercase tracking-wider transition-all duration-300 flex items-center gap-1.5 ${
-                    isCapabilities && megaOpen
+                    isPMC && megaOpen
                       ? 'btn-navy-gold shadow-[0_2px_10px_rgba(9,19,34,0.4)]'
                       : 'text-slate-700 hover:text-[#0c1a30] hover:bg-white/80 hover:shadow-[0_2px_8px_rgba(12,26,48,0.04),inset_0_1px_1px_white]'
                   }`}
                 >
                   <span>{link.name}</span>
-                  {isCapabilities && (
+                  {isPMC && (
                     <ChevronDown
                       className={`w-3.5 h-3.5 transition-transform duration-300 ${
                         megaOpen ? 'rotate-180 text-[#e8d5a3]' : 'text-slate-400'

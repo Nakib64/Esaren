@@ -8,7 +8,7 @@ import AboutPageView from '@/components/about/AboutPageView';
 export const metadata: Metadata = {
   title: 'About Us & Global Footprint Matrix | Esaren Global',
   description:
-    'Learn about Esaren Global Ltd, our mission, vision, and the four global operating hubs across London, Singapore, Izmir, and Dhaka.',
+    'Learn about Esaren Global Ltd, our mission, vision, and the four global operating hubs across Singapore, London, Guangzhou, and Lagos.',
 };
 
 export default function AboutPage() {

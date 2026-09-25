@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Esaren Global | International Venture & Strategic Infrastructure',
     description:
-      'International venture management & project management consulting across Singapore, London, Izmir, and Dhaka.',
+      'International venture management & project management consulting across Singapore, London, Guangzhou, and Lagos.',
     url: 'https://www.esaren.global',
     siteName: 'Esaren Global',
     images: [
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Esaren Global | International Venture & Strategic Infrastructure',
     description:
-      'International venture management & project management consulting across Singapore, London, Izmir, and Dhaka.',
+      'International venture management & project management consulting across Singapore, London, Guangzhou, and Lagos.',
     images: ['/images/og-image.jpg'],
   },
 };
