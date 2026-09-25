@@ -72,16 +72,26 @@ export default function ServicesMegaMenu({ onClose }: ServicesMegaMenuProps) {
         {/* Bottom Glass Footer Bar */}
         <div className="pt-4 border-t border-slate-200/60 flex items-center justify-between text-xs">
           <p className="text-slate-500 text-[11px]">
-            Comprehensive consulting across Road, Bridge, Energy & Telecom
+            Comprehensive consulting across Transport, Power, Marine & Telecom
           </p>
-          <Link
-            href="/services"
-            onClick={onClose}
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full btn-navy-gold text-[11px] font-semibold tracking-wider uppercase shadow-md group/btn"
-          >
-            <span>All 14 Capabilities & Full EPC</span>
-            <ArrowRight className="w-3.5 h-3.5 text-[#dfba54] transition-transform group-hover/btn:translate-x-1" />
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link
+              href="/projects"
+              onClick={onClose}
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-slate-200 bg-white/80 hover:bg-white text-[11px] font-semibold tracking-wider uppercase text-[#0c1a30] transition-all"
+            >
+              <span>Megaprojects ($1.4B+)</span>
+              <ArrowUpRight className="w-3.5 h-3.5 text-[#8e6814]" />
+            </Link>
+            <Link
+              href="/services"
+              onClick={onClose}
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full btn-navy-gold text-[11px] font-semibold tracking-wider uppercase shadow-md group/btn"
+            >
+              <span>14 Capabilities & EPC</span>
+              <ArrowRight className="w-3.5 h-3.5 text-[#dfba54] transition-transform group-hover/btn:translate-x-1" />
+            </Link>
+          </div>
         </div>
       </div>
     </motion.div>

@@ -41,8 +41,8 @@ export default function MobileNavDrawer({ isOpen, onClose }: MobileNavDrawerProp
                   alt="EGL Logo"
                   className="h-8 w-auto object-contain"
                 />
-                <span className="font-serif text-base font-bold tracking-wider uppercase">
-                  Esaren<span className="text-white/40 font-light">Global</span>
+                <span className="font-serif text-base font-bold tracking-wider uppercase text-white">
+                  ESAREN <span className="text-[#c5a059]">GLOBAL</span>
                 </span>
               </Link>
               <button

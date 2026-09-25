@@ -44,7 +44,7 @@ export default function ExecutiveSpotlightCard() {
             Stewarding Governance, Sovereign EPC & Venture Capital
           </h3>
           <p className="text-xs sm:text-sm text-slate-200 font-light leading-relaxed line-clamp-3">
-            Our Chairperson, Managing Partners, and regional functional directors convening to direct infrastructure project management, fund advisory, and strategic international joint ventures.
+            Our Chairperson, Managing Partners, and regional functional directors convening to direct infrastructure project management, fund advisory, and strategic institutional partnerships.
           </p>
         </div>
 

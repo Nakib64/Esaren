@@ -1,11 +1,11 @@
 export interface TeamMember {
   name: string;
   role: string;
-  category: 'Leadership' | 'Management' | 'Operations';
+  category: 'Leadership' | 'Strategic Advisory Board' | 'Management' | 'Operations';
   location: string;
   image: string;
   bio: string;
-  slide: number;
+  slide?: number;
 }
 
 export const REVISED_LEADERSHIP: TeamMember[] = [

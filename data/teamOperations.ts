@@ -37,12 +37,12 @@ export const TEAM_OPERATIONS: TeamMember[] = [
     bio: 'Orchestrating internal communications, cross-functional team workflows, and global client relations.',
   },
   {
-    name: 'Emre Cekemoglu',
+    name: 'Engr. Hong Li Guo',
     role: 'Head of PMO',
     category: 'Associates',
-    location: 'Izmir',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop',
-    bio: 'Directing PMO engineering support from Izmir, managing on-site project controls, and ongoing infrastructure delivery.',
+    location: 'Guangzhou',
+    image: '/images/team_members/hong_li_guo.webp',
+    bio: 'Directing PMO engineering support from Guangzhou, managing on-site project controls, and ongoing infrastructure delivery.',
   },
   {
     name: 'Sumaiya Mehjabin',

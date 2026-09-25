@@ -13,7 +13,7 @@ export const REVISED_OPERATIONS: TeamMember[] = [
   },
   {
     name: 'Diana Sachirciuc',
-    role: 'Country Director, United Kingdom',
+    role: 'Country Director, UK',
     category: 'Management',
     location: 'London, UK',
     image: '/images/team_members/diana_sachirciuc.webp',

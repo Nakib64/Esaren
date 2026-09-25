@@ -27,10 +27,10 @@ export default function VenturesPageView() {
         <div className="max-w-[1600px] mx-auto px-6 md:px-12 space-y-12">
           <div className="max-w-3xl space-y-3">
             <span className="text-xs tracking-widest uppercase text-gold-dark font-bold">
-              Global Strategic Alliances
+              Institutional Collaborations
             </span>
             <h2 className="text-2xl sm:text-4xl font-serif font-bold text-[#0c1a30]">
-              Our International Joint Ventures
+              Our Strategic Partners
             </h2>
           </div>
 

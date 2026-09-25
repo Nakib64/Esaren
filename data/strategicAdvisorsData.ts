@@ -1,0 +1,68 @@
+import { TeamMember } from '@/data/revisedTeamLeadership';
+
+export const STRATEGIC_ADVISORS: TeamMember[] = [
+  {
+    name: 'Alex Sullivan Esq.',
+    role: 'Legal & Compliance',
+    category: 'Strategic Advisory Board',
+    location: 'UK',
+    image: '/images/advisors/alex_sullivan.webp',
+    bio: 'Corporate lawyer handling legal and fiduciary governance for EGL. Project advisory specialist for financial control & audit. Managing partner at BFL Law (UK, US, EU).',
+  },
+  {
+    name: 'Faisal Sarker',
+    role: 'Technology',
+    category: 'Strategic Advisory Board',
+    location: 'Bangladesh',
+    image: '/images/advisors/faisal_sarker.webp',
+    bio: 'Veteran software and technology leader with 25+ years of experience across World Bank certified initiatives, multinational corporations, and sovereign digital governance.',
+  },
+  {
+    name: 'Emre Aytekin',
+    role: 'Project Partnership',
+    category: 'Strategic Advisory Board',
+    location: 'Turkey',
+    image: '/images/advisors/emre_aytekin.webp',
+    bio: 'Key advisor for global institutional networking, project financing, and international EPC collaborations, specializing in donor cycles and infrastructure consulting.',
+  },
+  {
+    name: 'Fumiko Kamioka',
+    role: 'Structured Finance',
+    category: 'Strategic Advisory Board',
+    location: 'Singapore',
+    image: '/images/advisors/fumiko_kamioka.webp',
+    bio: 'Senior banker with extensive leadership in Japan, Singapore, and Vietnam. Overseeing project finance structuring, strategic fund guidance, and capital governance at EGL.',
+  },
+  {
+    name: 'Roberto Mangano',
+    role: 'Technical Advisory',
+    category: 'Strategic Advisory Board',
+    location: 'UAE',
+    image: '/images/advisors/roberto_mangano.webp',
+    bio: 'Senior infrastructure engineer formerly with globally acclaimed EPC giants including ILF Consulting. Handled major civil and energy projects across UAE, Africa, and the EU.',
+  },
+  {
+    name: 'Sayma Rahman',
+    role: 'Venture Mentorship',
+    category: 'Strategic Advisory Board',
+    location: 'Australia',
+    image: '/images/advisors/sayma_rahman.webp',
+    bio: 'Strategic venture mentor and angel investor guiding seed to growth-stage enterprises. Founder of SR Consulting, advising cross-border startup ecosystems and scale-ups.',
+  },
+  {
+    name: 'Patricia Issa',
+    role: 'Business Development',
+    category: 'Strategic Advisory Board',
+    location: 'Italy & Lebanon',
+    image: '/images/advisors/patricia_issa.webp',
+    bio: 'Global business development and project sourcing specialist, stewarding high-level international institutional alliances and project financing across Europe and the Levant.',
+  },
+  {
+    name: 'Peter Koh',
+    role: 'Government Relations',
+    category: 'Strategic Advisory Board',
+    location: 'Singapore',
+    image: '/images/advisors/peter_koh.webp',
+    bio: 'Former diplomat, entrepreneur, and founder of Cord Engineering. Guiding EGL on international collaboration, sovereign stakeholder engagement, and government relations.',
+  },
+];

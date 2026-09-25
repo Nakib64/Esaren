@@ -12,7 +12,7 @@ export default function ContactPageView() {
       <SubpageHero
         badge="Global Inquiries"
         title="Connect With Our Global Advisory Hubs"
-        description="Initiate discussions regarding project management consulting, infrastructure joint ventures, or fund management with our senior partners across Singapore, London, Izmir, and Dhaka."
+        description="Initiate discussions regarding project management consulting, strategic partnerships, or fund advisory with our senior partners across Singapore, London, Guangzhou, and Lagos."
         graphicSrc="/images/logo.png"
         primaryCtaText="WhatsApp Direct"
         primaryCtaLink={WHATSAPP_LINK}
@@ -21,7 +21,7 @@ export default function ContactPageView() {
         pillars={[
           { icon: MessageCircle, title: 'WhatsApp Direct', subtitle: WHATSAPP_CONTACT },
           { icon: Mail, title: 'Email Advisory', subtitle: 'contact@esaren.global' },
-          { icon: MapPin, title: 'Singapore HQ', subtitle: '51 Goldhill Plaza' },
+          { icon: MapPin, title: 'Singapore HQ', subtitle: 'Paya Lebar Square' },
         ]}
       />
 

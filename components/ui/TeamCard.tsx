@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { MapPin } from 'lucide-react';
 import type { TeamMember } from '@/data/teamData';
 
 interface TeamCardProps {
@@ -26,22 +25,16 @@ export default function TeamCard({ member, index }: TeamCardProps) {
         loading="lazy"
       />
 
-      {/* Top Floating Badges */}
-      <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-10 pointer-events-none">
+      {/* Top Floating Badge */}
+      <div className="absolute top-4 left-4 z-10 pointer-events-none">
         <span className="text-[10px] font-bold tracking-widest uppercase badge-gold px-3 py-1 rounded-full shadow-md">
           {member.category}
         </span>
-        {member.location && (
-          <div className="bg-[#0c1a30]/80 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-medium text-white shadow-sm flex items-center gap-1 border border-white/20">
-            <MapPin className="w-3 h-3 text-gold-light" />
-            <span>{member.location}</span>
-          </div>
-        )}
       </div>
 
       {/* Desktop Resting State: Name & Role on subtle dark gradient */}
       <div className="hidden md:flex absolute inset-x-0 bottom-0 z-10 p-6 flex-col justify-end bg-gradient-to-t from-[#0c1a30] via-[#0c1a30]/70 to-transparent pt-24 transition-opacity duration-300 group-hover:opacity-0 pointer-events-none">
-        <span className="text-[10px] tracking-widest uppercase text-gold-light font-bold block mb-1">
+        <span className="text-[10px] tracking-widest uppercase text-gold-light font-bold block mb-1 whitespace-nowrap overflow-hidden text-ellipsis">
           {member.role}
         </span>
         <h3 className="text-xl sm:text-2xl font-serif font-bold text-white tracking-tight leading-tight">
@@ -53,7 +46,7 @@ export default function TeamCard({ member, index }: TeamCardProps) {
       <div className="absolute inset-x-0 bottom-0 z-20 bg-[#0c1a30]/95 backdrop-blur-md p-6 sm:p-7 border-t border-gold-border/40 shadow-2xl transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] translate-y-0 opacity-100 md:translate-y-full md:opacity-0 group-hover:md:translate-y-0 group-hover:md:opacity-100">
         <div className="space-y-2.5">
           <div>
-            <span className="text-[10px] tracking-widest uppercase text-gold-light font-bold block mb-0.5">
+            <span className="text-[10px] tracking-widest uppercase text-gold-light font-bold block mb-0.5 whitespace-nowrap overflow-hidden text-ellipsis">
               {member.role}
             </span>
             <h3 className="text-xl font-serif font-bold text-white tracking-tight leading-tight">
