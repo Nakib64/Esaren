@@ -20,11 +20,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${scrolled
           ? 'bg-foreground backdrop-blur-xl border-b  shadow-[0_8px_30px_rgba(4,2,115,0.35)] py-3.5'
           : 'bg-foreground py-4.5 border-b /50'
-      }`}
+        }`}
       onMouseLeave={() => setMegaOpen(false)}
     >
       <div className="max-w-[1600px] mx-auto px-6 md:px-12 flex items-center justify-between">
@@ -57,18 +56,16 @@ export default function Navbar() {
               >
                 <Link
                   href={link.href}
-                  className={`px-3.5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-300 flex items-center gap-1.5 ${
-                    isPMC && megaOpen
+                  className={`px-3.5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-300 flex items-center gap-1.5 ${isPMC && megaOpen
                       ? 'bg-white/15 text-[#D2BF37] shadow-sm'
-                      : 'text-slate-200 hover:text-[#D2BF37] hover:bg-white/10'
-                  }`}
+                      : 'text-gray-400 hover:text-[#D2BF37] hover:bg-white/10'
+                    }`}
                 >
                   <span>{link.name}</span>
                   {isPMC && (
                     <ChevronDown
-                      className={`w-3.5 h-3.5 transition-transform duration-300 ${
-                        megaOpen ? 'rotate-180 text-[#D2BF37]' : 'text-slate-300'
-                      }`}
+                      className={`w-3.5 h-3.5 transition-transform duration-300 ${megaOpen ? 'rotate-180 text-[#D2BF37]' : 'text-slate-300'
+                        }`}
                     />
                   )}
                 </Link>
