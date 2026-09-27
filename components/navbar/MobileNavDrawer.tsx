@@ -31,7 +31,7 @@ export default function MobileNavDrawer({ isOpen, onClose }: MobileNavDrawerProp
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 28, stiffness: 280 }}
-            className="fixed top-0 right-0 bottom-0 z-50 w-full max-w-sm bg-[#040273] text-white flex flex-col justify-between shadow-2xl p-6"
+            className="fixed top-0 right-0 bottom-0 z-50 w-full max-w-sm bg-foreground text-white flex flex-col justify-between shadow-2xl p-6"
           >
             {/* Header */}
             <div className="flex items-center justify-between pb-6 border-b border-white/15">

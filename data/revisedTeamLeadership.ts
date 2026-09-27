@@ -32,7 +32,7 @@ export const REVISED_LEADERSHIP: TeamMember[] = [
     role: 'Managing Partner',
     category: 'Leadership',
     location: 'Dhaka, Bangladesh',
-    image: '/images/team_members/ruhsan_rahman.webp',
+    image: '/images/team_members/ruhsan.webp',
     bio: 'Business developer, strategist and investment expert with 30+ years of background in technology, energy, infrastructure development and cross-border investment.',
     slide: 5,
   },

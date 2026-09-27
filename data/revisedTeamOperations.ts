@@ -7,7 +7,7 @@ export const REVISED_OPERATIONS: TeamMember[] = [
     role: 'Country Director, Nigeria',
     category: 'Management',
     location: 'Lagos, Nigeria',
-    image: '/images/team_members/Taofeek_adeleke.webp',
+    image: '/images/team_members/Taofik_adeleke.webp',
     bio: 'Based out of Lagos, Taofeek manages our overall back-office for global operations and leads sovereign infrastructure deliveries across the African region.',
     slide: 6,
   },

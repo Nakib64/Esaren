@@ -22,8 +22,8 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#040273]/95 backdrop-blur-xl border-b border-[#1c189c] shadow-[0_8px_30px_rgba(4,2,115,0.35)] py-3.5'
-          : 'bg-[#040273] py-4.5 border-b border-[#1c189c]/50'
+          ? 'bg-foreground backdrop-blur-xl border-b  shadow-[0_8px_30px_rgba(4,2,115,0.35)] py-3.5'
+          : 'bg-foreground py-4.5 border-b /50'
       }`}
       onMouseLeave={() => setMegaOpen(false)}
     >
@@ -44,7 +44,7 @@ export default function Navbar() {
 
         {/* Desktop Navigation Links — Deep Blue & Light Grey Pill */}
         <nav
-          className="hidden xl:flex items-center gap-1 bg-[#060485]/70 backdrop-blur-xl px-3 py-1.5 rounded-full border border-white/15 shadow-[0_8px_32px_0_rgba(4,2,115,0.4)] relative"
+          className="hidden xl:flex items-center gap-1 backdrop-blur-xl px-3 py-1.5 rounded-full   relative"
           onMouseLeave={() => setMegaOpen(false)}
         >
           {MAIN_NAV_LINKS.map((link) => {
@@ -84,7 +84,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <Link
             href="/contact"
-            className="hidden sm:inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#D2BF37] hover:bg-[#c4b02f] text-[#040273] text-xs font-bold uppercase tracking-wider transition-all shadow-md"
+            className="hidden sm:inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-gold-primary hover:bg-gold-light text-foreground text-xs font-bold uppercase tracking-wider transition-all shadow-md"
           >
             <span>Inquire</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
