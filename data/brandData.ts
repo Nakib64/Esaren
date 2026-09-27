@@ -14,6 +14,8 @@ export const CORPORATE_HQ_ADDRESS = '60 Paya Lebar Road, #06-28, Paya Lebar Squa
 export const OFFICIAL_WEBSITE = 'www.esaren.global';
 export const WHATSAPP_CONTACT = '+880 1714-072272';
 export const WHATSAPP_LINK = 'https://wa.me/8801714072272';
+export const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=61571466507067';
+export const LINKEDIN_URL = 'https://www.linkedin.com/company/esaren-global-ltd/home/';
 
 export const MISSION_STATEMENT = 'We aim to serve our clients strength to strength.';
 export const VISION_STATEMENT =
