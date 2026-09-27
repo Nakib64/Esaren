@@ -20,14 +20,15 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${scrolled
-          ? 'bg-[#f9f6f0]/85 backdrop-blur-xl border-b border-slate-200/70 shadow-[0_4px_24px_rgba(12,26,48,0.04)] py-4'
-          : 'bg-transparent py-6'
-        }`}
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+        scrolled
+          ? 'bg-[#040273]/95 backdrop-blur-xl border-b border-[#1c189c] shadow-[0_8px_30px_rgba(4,2,115,0.35)] py-3.5'
+          : 'bg-[#040273] py-4.5 border-b border-[#1c189c]/50'
+      }`}
       onMouseLeave={() => setMegaOpen(false)}
     >
       <div className="max-w-[1600px] mx-auto px-6 md:px-12 flex items-center justify-between">
-        {/* Brand Logo with Actual EGL Winged Shield Emblem */}
+        {/* Brand Logo with Actual EGL Emblem */}
         <Link href="/" className="flex items-center gap-3 group">
           <img
             src="/images/logo.png"
@@ -35,15 +36,15 @@ export default function Navbar() {
             className="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105"
           />
           <div className="flex items-center">
-            <span className="font-serif text-lg font-bold tracking-wider uppercase leading-none text-[#0c1a30]">
-              ESAREN <span className="text-[#c5a059]">GLOBAL</span>
+            <span className="font-serif text-lg font-bold tracking-wider uppercase leading-none text-white">
+              ESAREN <span className="text-[#D2BF37]">GLOBAL</span>
             </span>
           </div>
         </Link>
 
-        {/* Desktop Navigation Links — Glassmorphism Pill */}
+        {/* Desktop Navigation Links — Deep Blue & Light Grey Pill */}
         <nav
-          className="hidden lg:flex items-center gap-1.5 bg-white/70 backdrop-blur-xl px-4 py-1.5 rounded-full border border-white/80 shadow-[0_8px_32px_0_rgba(12,26,48,0.06),inset_0_1px_2px_0_rgba(255,255,255,0.95)] relative"
+          className="hidden xl:flex items-center gap-1 bg-[#060485]/70 backdrop-blur-xl px-3 py-1.5 rounded-full border border-white/15 shadow-[0_8px_32px_0_rgba(4,2,115,0.4)] relative"
           onMouseLeave={() => setMegaOpen(false)}
         >
           {MAIN_NAV_LINKS.map((link) => {
@@ -52,24 +53,21 @@ export default function Navbar() {
               <div
                 key={link.name}
                 className="relative"
-                onMouseEnter={() => {
-                  if (isPMC) setMegaOpen(true);
-                  else setMegaOpen(false);
-                }}
+                onMouseEnter={() => setMegaOpen(isPMC)}
               >
                 <Link
                   href={link.href}
-                  className={`px-4 py-2 rounded-full text-xs font-medium uppercase tracking-wider transition-all duration-300 flex items-center gap-1.5 ${
+                  className={`px-3.5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-300 flex items-center gap-1.5 ${
                     isPMC && megaOpen
-                      ? 'btn-navy-gold shadow-[0_2px_10px_rgba(9,19,34,0.4)]'
-                      : 'text-slate-700 hover:text-[#0c1a30] hover:bg-white/80 hover:shadow-[0_2px_8px_rgba(12,26,48,0.04),inset_0_1px_1px_white]'
+                      ? 'bg-white/15 text-[#D2BF37] shadow-sm'
+                      : 'text-slate-200 hover:text-[#D2BF37] hover:bg-white/10'
                   }`}
                 >
                   <span>{link.name}</span>
                   {isPMC && (
                     <ChevronDown
                       className={`w-3.5 h-3.5 transition-transform duration-300 ${
-                        megaOpen ? 'rotate-180 text-[#e8d5a3]' : 'text-slate-400'
+                        megaOpen ? 'rotate-180 text-[#D2BF37]' : 'text-slate-300'
                       }`}
                     />
                   )}
@@ -86,7 +84,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <Link
             href="/contact"
-            className="hidden sm:inline-flex items-center gap-2 px-6 py-2.5 rounded-full btn-navy-gold text-xs font-semibold uppercase tracking-wider"
+            className="hidden sm:inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#D2BF37] hover:bg-[#c4b02f] text-[#040273] text-xs font-bold uppercase tracking-wider transition-all shadow-md"
           >
             <span>Inquire</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
@@ -96,7 +94,7 @@ export default function Navbar() {
             type="button"
             onClick={() => setMobileOpen(true)}
             aria-label="Open navigation menu"
-            className="lg:hidden w-10 h-10 rounded-2xl bg-white/80 backdrop-blur-md border border-white/80 flex items-center justify-center text-[#0c1a30] shadow-[0_4px_12px_rgba(12,26,48,0.06),inset_0_1px_1px_white] hover:bg-white transition-all"
+            className="xl:hidden w-10 h-10 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all shadow-sm"
           >
             <Menu className="w-5 h-5" />
           </button>

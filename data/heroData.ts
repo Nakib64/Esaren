@@ -28,15 +28,15 @@ export const HERO_SLIDES: HeroSlide[] = [
   },
   {
     id: 2,
-    title: 'Venture Management & Strategic Partners',
+    title: 'Venture Management & Strategic Partnerships',
     subtitle: 'Strategic Alliances, Fund Advisory & Global Co-Development',
     description:
       'Syndicating strategic corporate partners, private aviation, and cross-border alliances backed by Singapore-based fund management and institutional capital syndication.',
-    tag: 'Core Activity 02 • Strategic Partners & Alliances',
+    tag: 'Core Activity 02 • Strategic Partnerships & Alliances',
     icon: TrendingUp,
     bgImage: '/images/hero_slide_2.webp',
     primaryLink: '/ventures',
-    primaryText: 'Explore Strategic Partners',
+    primaryText: 'Explore Strategic Partnerships',
   },
   {
     id: 3,

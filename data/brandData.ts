@@ -1,6 +1,7 @@
 export interface GlobalOffice {
   city: string;
   role: string;
+  address?: string;
   keyPersonnel: string;
   responsibilities: string[];
   handledValue?: string;
@@ -11,6 +12,10 @@ export interface GlobalOffice {
 export const BRAND_TAGLINE = 'Stronger bonds with unity & perfection';
 export const GROUP_NAME = 'Esaren International Group, UK';
 export const CORPORATE_HQ_ADDRESS = '60 Paya Lebar Road, #06-28, Paya Lebar Square, Singapore 409051';
+export const LONDON_ADDRESS = '29 Dukes Wood, Crowthorne, RG45 6NF, United Kingdom';
+export const LAGOS_ADDRESS = 'Mulliner Tower, 7th floor, 39 Alfred Rewane Rd, Ikoyi, Lagos 106104, Lagos, Nigeria';
+export const GUANGZHOU_ADDRESS =
+  'Pearl River Tower, 15 Zhujiang W Rd, Tianhe District, Guangzhou, Guangdong Province, China, 510623';
 export const OFFICIAL_WEBSITE = 'www.esaren.global';
 export const WHATSAPP_CONTACT = '+880 1714-072272';
 export const WHATSAPP_LINK = 'https://wa.me/8801714072272';
@@ -25,6 +30,7 @@ export const GLOBAL_OFFICES: GlobalOffice[] = [
   {
     city: 'Singapore',
     role: 'Corporate HQ',
+    address: CORPORATE_HQ_ADDRESS,
     keyPersonnel: 'Corporate Fund Directorate',
     responsibilities: [
       'Central fund management & venture operations',
@@ -36,6 +42,7 @@ export const GLOBAL_OFFICES: GlobalOffice[] = [
   {
     city: 'London',
     role: 'Group HQ',
+    address: LONDON_ADDRESS,
     keyPersonnel: 'Group Governance Directorate',
     responsibilities: [
       'All corporate governance and compliance',
@@ -48,6 +55,7 @@ export const GLOBAL_OFFICES: GlobalOffice[] = [
   {
     city: 'Guangzhou',
     role: 'PMO & Technical EPC',
+    address: GUANGZHOU_ADDRESS,
     keyPersonnel: 'Technical EPC Directorate',
     responsibilities: [
       'Engineering, procurement & construction (EPC) execution',
@@ -58,6 +66,7 @@ export const GLOBAL_OFFICES: GlobalOffice[] = [
   {
     city: 'Lagos',
     role: 'Back-End Operations',
+    address: LAGOS_ADDRESS,
     keyPersonnel: 'Operational Support Directorate',
     responsibilities: [
       'Internal coordination & shared support services',

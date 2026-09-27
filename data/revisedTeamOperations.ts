@@ -3,12 +3,12 @@ import { TeamMember } from '@/data/revisedTeamLeadership';
 export const REVISED_OPERATIONS: TeamMember[] = [
   // Slide 6 — Core Management Team
   {
-    name: 'Taofik Adeleke',
+    name: 'Taofeek Adeleke',
     role: 'Country Director, Nigeria',
     category: 'Management',
     location: 'Lagos, Nigeria',
-    image: '/images/team_members/taofik_adeleke.webp',
-    bio: 'Based out of Lagos, Taofik manages our overall back-office for global operations and leads sovereign infrastructure deliveries across the African region.',
+    image: '/images/team_members/Taofeek_adeleke.webp',
+    bio: 'Based out of Lagos, Taofeek manages our overall back-office for global operations and leads sovereign infrastructure deliveries across the African region.',
     slide: 6,
   },
   {

@@ -29,6 +29,7 @@ export const ABOUT_PILLARS: AboutPillar[] = [
     desc: 'All corporate, financing, legal & compliance activities handled from here. Handled USD 290 Million in project value, with a further USD 330 Million under active consideration.',
     iconName: 'ShieldCheck',
     coverImage: '/images/about_london_hq.webp',
+    address: '29 Dukes Wood, Crowthorne, RG45 6NF, United Kingdom',
     email: 'contact@esaren.global',
   },
   {
@@ -38,6 +39,8 @@ export const ABOUT_PILLARS: AboutPillar[] = [
     desc: 'All engineering, procurement & construction (EPC) activities managed from here with globally dispersed team members. The PMO actively manages all ongoing civil infrastructure projects.',
     iconName: 'Zap',
     coverImage: '/images/about_guangzhou_hub.webp',
+    address:
+      'Pearl River Tower, 15 Zhujiang W Rd, Tianhe District, Guangzhou, Guangdong Province, China, 510623',
     email: 'contact@esaren.global',
   },
   {
@@ -47,6 +50,8 @@ export const ABOUT_PILLARS: AboutPillar[] = [
     desc: 'Formulated specialized multidisciplinary teams delivering internal coordination, shared support services, and venture deployment across EGL’s international footprint.',
     iconName: 'Users',
     coverImage: '/images/about_lagos_hub.webp',
+    address:
+      'Mulliner Tower, 7th floor, 39 Alfred Rewane Rd, Ikoyi, Lagos 106104, Lagos, Nigeria',
     whatsapp: '+880 1714-072272',
     whatsappLink: 'https://wa.me/8801714072272',
     email: 'contact@esaren.global',

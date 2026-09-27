@@ -36,7 +36,7 @@ export const CORE_ACTIVITIES: CoreActivityItem[] = [
   {
     id: '02',
     badge: 'Core Activity 02 • Strategic Alliances',
-    title: 'Venture Management & Strategic Partners',
+    title: 'Venture Management & Strategic Partnerships',
     subtitle: 'Strategic Alliances • Singapore Fund Advisory • Cross-Border Growth',
     desc: 'At the second step, EGL syndicates strategic partnerships and venture management with a Singapore-based Fund Management presence. We provide financing facilities, technical partnership, and strategic partner co-development worldwide.',
     iconName: 'TrendingUp',
@@ -48,7 +48,7 @@ export const CORE_ACTIVITIES: CoreActivityItem[] = [
       'Institutional Wealth Structuring & SPV Fund Governance',
     ],
     primaryLink: '#ventures',
-    primaryLabel: 'Explore Strategic Partners',
+    primaryLabel: 'Explore Strategic Partnerships',
     secondaryLink: '/ventures',
     secondaryLabel: 'View All Partners & Ventures',
   },

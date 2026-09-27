@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ShieldCheck, Compass, Zap, Users, ArrowUpRight } from 'lucide-react';
+import { ShieldCheck, Compass, Zap, Users, ArrowUpRight, MapPin } from 'lucide-react';
 import { AboutPillar } from '@/data/aboutPillars';
 
 const ICON_MAP = { ShieldCheck, Compass, Zap, Users };
@@ -49,6 +49,12 @@ export default function AboutPillarCard({ item, className = '' }: AboutPillarCar
           <p className="text-xs sm:text-sm text-slate-600 font-light leading-relaxed">
             {item.desc}
           </p>
+          {item.address && (
+            <div className="pt-2 flex items-start gap-1.5 text-xs text-slate-500 border-t border-slate-100">
+              <MapPin className="w-3.5 h-3.5 text-gold-dark shrink-0 mt-0.5" />
+              <span>{item.address}</span>
+            </div>
+          )}
         </div>
 
         <Link

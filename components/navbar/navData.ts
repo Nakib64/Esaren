@@ -6,7 +6,7 @@ export interface NavLinkItem {
 export const MAIN_NAV_LINKS: NavLinkItem[] = [
   { name: 'About', href: '/about' },
   { name: 'Project Management Consulting', href: '/services' },
-  { name: 'Strategic Partners', href: '/ventures' },
+  { name: 'Venture Management & Strategic Partnerships', href: '/ventures' },
   { name: 'Leadership', href: '/team' },
   { name: 'Contact', href: '/contact' },
 ];

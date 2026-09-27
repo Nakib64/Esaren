@@ -40,7 +40,7 @@ export const TEAM_LEADERSHIP: TeamMember[] = [
     bio: 'Head of Singapore Corporate HQ, stewarding global brand positioning and institutional clientele across 20+ countries.',
   },
   {
-    name: 'Taofik Adeleke',
+    name: 'Taofeek Adeleke',
     role: 'Director, Project Management Consulting',
     category: 'Management',
     image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop',

@@ -19,7 +19,7 @@ export default function PortfolioVenturesSection() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-6 border-b border-slate-200">
           <div className="space-y-3 max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full badge-gold text-xs tracking-widest uppercase shadow-sm font-semibold">
-              <span>Core Activity 02 • Venture Management & Strategic Partners</span>
+              <span>Core Activity 02 • Venture Management & Strategic Partnerships</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#0c1a30] tracking-tight">
               Our Strategic Partners & Institutional Alliances
@@ -33,7 +33,7 @@ export default function PortfolioVenturesSection() {
             href="/ventures"
             className="group px-6 py-3.5 rounded-full btn-navy-gold font-bold text-xs uppercase tracking-widest flex items-center gap-3 shrink-0 self-start lg:self-end"
           >
-            <span>View All Strategic Partners</span>
+            <span>View All Strategic Partnerships</span>
             <ArrowRight className="w-4 h-4 text-gold-light group-hover:text-gold-lighter transition-transform group-hover:translate-x-1" />
           </Link>
         </div>
