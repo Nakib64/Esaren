@@ -40,11 +40,11 @@ export const REVISED_OPERATIONS: TeamMember[] = [
 
   // Slide 7 — Core Operations Team
   {
-    name: 'Ms. Antineea Balan',
+    name: 'Antineea Balan',
     role: 'Director- Sales & Strategy',
     category: 'Operations',
     location: 'Romania',
-    image: '/images/team_members/image.png',
+    image: '/images/team_members/antineea.jpeg',
     bio: 'Antineea is based out of Romania and handles and creates our guidelines for strategic growth and coordinates with the growth marketing endeavours. She also handles pre-sales relationships with clients at EGL globally',
     slide: 7,
   },
