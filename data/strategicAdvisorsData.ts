@@ -1,14 +1,7 @@
 import { TeamMember } from '@/data/revisedTeamLeadership';
 
 export const STRATEGIC_ADVISORS: TeamMember[] = [
-  {
-    name: 'Alex Sullivan Esq.',
-    role: 'Legal & Compliance',
-    category: 'Strategic Advisory Board',
-    location: 'UK',
-    image: '/images/advisors/alex_sullivan.webp',
-    bio: 'Corporate lawyer handling legal and fiduciary governance for EGL. Project advisory specialist for financial control & audit. Managing partner at BFL Law (UK, US, EU).',
-  },
+  
   {
     name: 'Faisal Sarker',
     role: 'Technology',
@@ -17,30 +10,7 @@ export const STRATEGIC_ADVISORS: TeamMember[] = [
     image: '/images/advisors/faisal_sarker.webp',
     bio: 'Veteran software and technology leader with 25+ years of experience across World Bank certified initiatives, multinational corporations, and sovereign digital governance.',
   },
-  {
-    name: 'Emre Aytekin',
-    role: 'Project Partnership',
-    category: 'Strategic Advisory Board',
-    location: 'Turkey',
-    image: '/images/advisors/emre_aytekin.webp',
-    bio: 'Key advisor for global institutional networking, project financing, and international EPC collaborations, specializing in donor cycles and infrastructure consulting.',
-  },
-  {
-    name: 'Fumiko Kamioka',
-    role: 'Structured Finance',
-    category: 'Strategic Advisory Board',
-    location: 'Singapore',
-    image: '/images/advisors/fumiko_kamioka.webp',
-    bio: 'Senior banker with extensive leadership in Japan, Singapore, and Vietnam. Overseeing project finance structuring, strategic fund guidance, and capital governance at EGL.',
-  },
-  {
-    name: 'Roberto Mangano',
-    role: 'Technical Advisory',
-    category: 'Strategic Advisory Board',
-    location: 'UAE',
-    image: '/images/advisors/roberto_mangano.webp',
-    bio: 'Senior infrastructure engineer formerly with globally acclaimed EPC giants including ILF Consulting. Handled major civil and energy projects across UAE, Africa, and the EU.',
-  },
+
   {
     name: 'Sayma Rahman',
     role: 'Venture Mentorship',

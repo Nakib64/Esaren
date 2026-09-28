@@ -27,7 +27,7 @@ export default function AboutPageView() {
       />
 
       {/* Mission & Vision Section */}
-      <section className="py-20 bg-[#f9f6f0] text-[#0c1a30] border-b border-slate-200">
+      <section className=" bg-[#f9f6f0] pb-6 text-[#0c1a30] border-b border-slate-200">
         <div className="max-w-[1600px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="p-8 sm:p-10 rounded-3xl bg-white border border-slate-200 hover:border-gold-border card-hover-gold-accent shadow-sm space-y-4">
             <div className="w-12 h-12 rounded-2xl icon-box-gold flex items-center justify-center">

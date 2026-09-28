@@ -25,7 +25,7 @@ export default function SubpageHero({
   graphicSrc = '/images/hero_ventures_transparent.webp',
 }: SubpageHeroProps) {
   return (
-    <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 bg-[#f9f6f0] text-[#0c1a30] overflow-hidden border-b border-slate-200/80">
+    <section className="relative pt-32 pb-16 md:pt-40 md:pb-16 bg-[#f9f6f0] text-[#0c1a30] overflow-hidden border-b border-slate-200/80">
       {/* Decorative architectural curve lines */}
       <svg className="absolute bottom-0 left-0 w-80 h-36 pointer-events-none opacity-40 text-slate-300" viewBox="0 0 320 144" fill="none">
         <path d="M-40 130 C 80 120, 160 80, 320 20" stroke="currentColor" strokeWidth="1" />

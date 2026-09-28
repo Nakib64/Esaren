@@ -12,13 +12,12 @@ export const REVISED_OPERATIONS: TeamMember[] = [
     slide: 6,
   },
   {
-    name: 'Diana Sachirciuc',
+    name: 'Alex Sullivan Esq.',
     role: 'Country Director, UK',
     category: 'Management',
-    location: 'London, UK',
-    image: '/images/team_members/diana_sachirciuc.webp',
-    bio: 'Based out of London, Diana coordinates financing management with global partners and oversees international legal and compliance affairs.',
-    slide: 6,
+    location: 'UK',
+    image: '/images/advisors/alex_sullivan.webp',
+    bio: 'Corporate lawyer handling legal and fiduciary governance for EGL. Project advisory specialist for financial control & audit. Managing partner at BFL Law (UK, US, EU).',
   },
   {
     name: 'Engr. Hong Li Guo',
@@ -41,12 +40,12 @@ export const REVISED_OPERATIONS: TeamMember[] = [
 
   // Slide 7 — Core Operations Team
   {
-    name: 'Sadat Omi',
-    role: 'Director, Strategy & Coordination',
+    name: 'Ms. Antineea Balan',
+    role: 'Director- Sales & Strategy',
     category: 'Operations',
-    location: 'Dhaka, Bangladesh',
-    image: '/images/team_members/sadat_omi.webp',
-    bio: 'Based in Bangladesh, providing strategic guidance for all operations and multi-hub coordination across EGL teams globally dispersed in 7 locations.',
+    location: 'Romania',
+    image: '/images/team_members/image.png',
+    bio: 'Antineea is based out of Romania and handles and creates our guidelines for strategic growth and coordinates with the growth marketing endeavours. She also handles pre-sales relationships with clients at EGL globally',
     slide: 7,
   },
   {

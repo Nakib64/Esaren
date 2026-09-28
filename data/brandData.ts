@@ -22,7 +22,7 @@ export const WHATSAPP_LINK = 'https://wa.me/8801714072272';
 export const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=61571466507067';
 export const LINKEDIN_URL = 'https://www.linkedin.com/company/esaren-global-ltd/home/';
 
-export const MISSION_STATEMENT = 'We aim to serve our clients strength to strength.';
+export const MISSION_STATEMENT = 'We aim to serve our clients from strength to strength.';
 export const VISION_STATEMENT =
   'Our vision is to become the best version of ourselves, build a fraternity of partners and customers with purpose and efficacy.';
 
